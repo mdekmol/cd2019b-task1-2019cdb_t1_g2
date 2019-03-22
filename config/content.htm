@@ -40,6 +40,7 @@ Host github.com_mdecourse
     TCPKeepAlive yes
     IdentitiesOnly yes</pre>
 <p></p>
+<h1>Week4</h1>
 <h1>git http 與 ssh</h1>
 <p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p
