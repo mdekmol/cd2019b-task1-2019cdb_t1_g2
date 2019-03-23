@@ -45,8 +45,8 @@ Host github.com_mdecourse
 <p>Youtube 連結：<span> </span><a href="https://www.youtube.com/watch?v=lB-spECfhr8">https://www.youtube.com/watch?v=lB-spECfhr8</a> </p>
 <p><strong>01：</strong></p>
 <ol>
-<li>clone 位址：https://github.com/<g class="gr_ gr_120 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="120" id="120">mdecourse</g>/cmstest.git</li>
-<li>(cmd視窗執行)Y:/cd project/cd <g class="gr_ gr_115 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="115" id="115">cmstest</g>/python <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="121" id="121">wsgi</g>.py 進入將 <g class="gr_ gr_118 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="118" id="118">cmstest</g> clone 的檔案位址</li>
+<li>clone 位址：https://github.com/<g class="gr_ gr_119 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="119" id="119">mdecourse</g>/cmstest.git</li>
+<li>(cmd視窗執行)Y:/cd project/cd <g class="gr_ gr_115 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="115" id="115">cmstest</g>/python <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="121" id="121">wsgi</g>.py 進入將 <g class="gr_ gr_117 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="117" id="117">cmstest</g> clone 的檔案位址</li>
 <li>https://localhost：9443 進入測試網站</li>
 <li>進行改版( save → generate_page )</li>
 </ol>
@@ -67,11 +67,12 @@ Host github.com_mdecourse
 </ul>
 <p style="padding-left: 30px;"><img alt="" height="538" src="/images/chrome_2019-03-14_22-25-17.png" width="500"/></p>
 <ul>
-<li><strong>→為"沒有執行權限"該狀況因為 </strong><g class="gr_ gr_110 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="110" id="110">cmstest</g><strong> 是由 </strong><g class="gr_ gr_116 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="116" id="116">mdeocurse</g><strong> 進行 clone，所對應的倉儲並未擁有編輯權限，遂在過去的編輯仍可以在"近端" </strong><g class="gr_ gr_112 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="112" id="112">ungit</g><strong> 進行檢視，但無法推送至遠端 </strong><g class="gr_ gr_113 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="113" id="113">github</g></li>
+<li><strong>→為"沒有執行權限"該狀況因為 </strong><g class="gr_ gr_110 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="110" id="110">cmstest</g><strong> 是由 </strong><g class="gr_ gr_114 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="114" id="114">mdeocurse</g><strong> 進行 clone，所對應的倉儲並未擁有編輯權限，遂在過去的編輯仍可以在"近端" </strong><g class="gr_ gr_111 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="111" id="111">ungit</g><strong> 進行檢視，但無法推送至遠端 </strong><g class="gr_ gr_112 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="112" id="112">github</g></li>
 </ul>
 <p>詳見：  <a href="https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki">https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki</a> </p>
 <p></p>
-<br/>git <g class="gr_ gr_111 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="111" id="111">http</g> 與 ssh
+<h1>git http 與 ssh</h1>
+<p><br/>git <g class="gr_ gr_113 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="113" id="113">http</g> 與 ssh</p>
 <p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p
 
@@ -98,7 +99,7 @@ IdentitiesOnly yes</pre>
 <h1>目錄結構</h1>
 <p>第二位想要編輯這裡</p>
 <p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/9A-hg32eD-s" width="560"></iframe></p>
-<p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 <g class="gr_ gr_114 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="114" id="114">Beatifulsoup</g> 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
+<p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 <g class="gr_ gr_116 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="116" id="116">Beatifulsoup</g> 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
 <p>content.htm 檔案可以透過動態系統中的 generate_pages 功能, 將超文件轉為位於 content 目錄中的個別頁面檔案.</p>
 <p>動態系統與靜態系統則共用 downloads, images, static 等目錄, 其中 downloads 目錄存放在動態系統上傳的文件檔, 而 images 目錄則存放動態系統所上傳的影像檔案, 包括 jpg, png 與 gif 等格式圖檔.</p>
 <p>static 目錄則存放在動態與靜態系統所需要的 Javascript 或 Brython 程式檔.</p>
@@ -537,7 +538,7 @@ COPY TO CLIPBOARD	</pre>
 <h1>網際簡報</h1>
 <p>CMSimfly 中採用 <a href="https://revealjs.com/#/">Reveal.js</a> 作為網際簡報, 其中的維護檔案位於 config/reveal.js, 而對應的簡報檔案則位於 reveal 目錄中.</p>
 <h1>網誌編輯</h1>
-<p>CMSimfly 採用 <a href="https://blog.getpelican.com/">Pelican blog</a> 系統, 編輯檔案位於 config/<g class="gr_ gr_117 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="117" id="117">pelican</g>.leo, 對應的</p>
+<p>CMSimfly 採用 <a href="https://blog.getpelican.com/">Pelican blog</a> 系統, 編輯檔案位於 config/<g class="gr_ gr_120 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="120" id="120">pelican</g>.leo, 對應的</p>
 <p> Markdown 原始檔案位於 markdown 目錄中, 而經 Pelican 轉換出的網誌超文件檔案則位於 blog 目錄中.</p>
 <p>其餘在網誌文章中所需要的 Javascript 或 Brython 程式檔案, 則與 CMSimfly 及 Reveal.js 共用, 位於 static 目錄下.</p>
 <p>上傳檔案與圖檔的引用則與 CMSimfly 架構相同.</p>
