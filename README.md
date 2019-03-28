@@ -7,7 +7,3 @@ BLOG:https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/
 
 投影片:https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/reveal/
 
-<<<<<<< HEAD
-..
-=======
->>>>>>> cabcb48e30b5a56df29804576c4e4f62359cf869
