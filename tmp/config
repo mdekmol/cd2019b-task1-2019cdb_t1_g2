@@ -1,0 +1,24 @@
+ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p
+ 
+# for user1
+# url = git@github.com_user1:user1/cmstest.git
+Host github.com_user1
+    User git
+    Port 22
+    Hostname github.com
+ 
+    IdentityFile "y:\home\.ssh\id_rsa_user1"
+ 
+    TCPKeepAlive yes
+    IdentitiesOnly yes
+     
+# for user2
+# url = git@github.com_user2:user2/user2.com.git
+Host github.com_user2
+    Port 22
+    Hostname github.com
+ 
+    IdentityFile "y:\home\.ssh\id_rsa_user2"
+ 
+    TCPKeepAlive yes
+    IdentitiesOnly yes
