@@ -30,7 +30,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "mdekmol"
+DISQUS_SITENAME = "cd2019b-task1-2019cdb_t1_g2"
 DISQUS_DISPLAY_COUNTS = False
 #GOOGLE_ANALYTICS = ""
 
