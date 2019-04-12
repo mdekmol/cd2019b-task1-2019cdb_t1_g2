@@ -66,9 +66,9 @@
 <v t="leo.20170710022041.1"><vh>@path markdown</vh>
 <v t="leo.20180115115910.1"><vh>2018</vh>
 <v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
-<v t="leo.20190412150417.1"><vh>@20190222.md</vh></v>
-<v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
+<v t="leo.20190412150417.1"><vh>@edit 20190222.md</vh></v>
 <v t="leo.20180909205246.1"><vh>@edit 20180911.md</vh></v>
+<v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
 </v>
 </v>
 </v>
@@ -101,27 +101,7 @@ g.es("admin pelican Github 執行完畢")
 <t tx="leo.20180115093726.1"></t>
 <t tx="leo.20180115115910.1"></t>
 <t tx="leo.20180115142025.1"></t>
-<t tx="leo.20180423103639.1">
-</t>
-<t tx="leo.20190412150417.1">@language md
----
-Title: 2018 Fall CP 課程
-Date: 2019-02-22 11:00
-Category: Misc
-Tags: 2019SpringCdb
-Slug: 2019Spring-w1
-Author: bg2
----
-
-
-
-&lt;!-- PELICAN_END_SUMMARY --&gt;
-
-test
-----
-
-
-</t>
+<t tx="leo.20180423103639.1"></t>
 <t tx="yen.20170108171605.1"></t>
 <t tx="yen.20170108171605.2">QTreeWidget {
     /* These apply to the selected item, but not to editing items.*/
