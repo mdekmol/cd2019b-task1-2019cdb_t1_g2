@@ -163,7 +163,47 @@ IdentityFile "y:\home\.ssh\id_rsa"
 TCPKeepAlive yes
 IdentitiesOnly yes</pre>
 <h2>Week6</h2>
-<h2>Week7</h2>
+<p>Ungit 近端版本分支合併，以及小組遠端推送問題。處理過程橫跨 Week6 週末到 Wee7 課程時段。</p>
+<ul>
+<li><strong>解決推送問題：方案1.</strong>
+<ul>
+<li><strong>.config 內容 user1 修正為對應小組學號 40423217：</strong>
+<ul>
+<li>.config 內容所描述的 user1 and user2 是謂為同一使用者可以利用 user1 and user2 兩身分，分別進行不同對應帳號，行同一或不同倉儲進行編輯、推送等動作；也因此可以在 .config 內文追加 user3 user4 等身分，行上述作業模式。</li>
+</ul>
+</li>
+<li><strong>遂根據上述：20190329推送問題：</strong>
+<ul>
+<li>可能為 .config 內文 user1 並未修正為小組對應學號 40423217 ，遂無法執行 ssh 在小組推送時的身分驗證。</li>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe <br/>- -H 140.130.17.32:3128<br/>- <br/>- for 40423217<br/>- url = git@github.com_40423217:mdekmol/cd2019b-task1-2019cdb_t1_g2.git<br/>- Host github.com_40423217<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_40423217"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- <br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_user2"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+<li>
+<p><strong>持續嘗試推送，在 ungit 視窗出現錯誤：<br/></strong></p>
+<ul>
+<li>
+<p>- connect --- simple relaying command via proxy.<br/>- Version 1.105<br/>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br/>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br/>- [-T proxy-server[:port]]<br/>- [-c telnet-proxy-command]<br/>- host port<br/>- ssh_exchange_identification: Connection closed by remote host<br/>- fatal: Could not read from remote repository.</p>
+<p>Please make sure you have the correct access rights<br/>- and the repository exists.</p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p><img alt="" height="333" src="/images/2019April09-143745Tuesday.png" width="500"/></p>
+<ul>
+<li>
+<ul>
+<li> <strong>針對方案 1 狀況處理：</strong><br/>
+<ul>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>在未指定proxy進行推送時出現錯誤，仍可持續進行推送</p>
+<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"/></p><h2>Week7</h2>
 <h2>Week8</h2>
 <h2>Week9</h2>
 <h1>Onshape</h1>
@@ -182,37 +222,37 @@ IdentitiesOnly yes</pre>
 <tr>
 <td style="width: 86px; text-align: center;">2019/02/22</td>
 <td style="width: 93px; text-align: center;">Week 1</td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">說明本學期評分方式,說明如何自己製作可攜程式。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/01</td>
 <td style="width: 93px; text-align: center;"><span>Week 2</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">228連假休息。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/08</td>
 <td style="width: 93px; text-align: center;"><span>Week 3</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">分組完成，開始分組任務，對kungit已有初步了解。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/15</td>
 <td style="width: 93px; text-align: center;"><span>Week 4</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">完成系己製作的可攜程式，使用kungit提交、推送資料。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/22</td>
 <td style="width: 93px; text-align: center;"><span>Week 5</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">本週遇到ssh權限的問題，尚未找出解決辦法。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/29</td>
 <td style="width: 93px; text-align: center;"><span>Week 6</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">本週上課前已解決ssh、金鑰的問題，練習使用V-rep做BubbleRob模擬。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/04/05</td>
 <td style="width: 93px; text-align: center;"><span>Week 7</span></td>
-<td style="width: 350px;"></td>
+<td style="width: 350px;">清明連假休息。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/04/12</td>
@@ -225,8 +265,7 @@ IdentitiesOnly yes</pre>
 <td style="width: 350px;"></td>
 </tr>
 </tbody>
-</table>
-<h2>40623209</h2>
+</table><h2>40623209</h2>
 <table border="2" style="width: 531px; border-color: #000000;"><caption></caption>
 <tbody>
 <tr>

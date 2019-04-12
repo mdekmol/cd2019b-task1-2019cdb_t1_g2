@@ -5,7 +5,7 @@
 <p><a href="https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog">Blog</a></p>
 <p><a href="https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/reveal">Reveal</a></p>
 <p></p>
-<table border="3" style="width: 531px; border-color: #1839f2;"><caption></caption>
+<table border="3" style="width: 517px; border-color: #1839f2;"><caption></caption>
 <tbody>
 <tr style="height: 49.2083px;">
 <td style="width: 176px; text-align: center; height: 49.2083px;"><strong>Leader</strong></td>
@@ -20,9 +20,9 @@
 <p><span></span></p>
 <table border="3" style="width: 517px; border-color: #1839f2;"><caption></caption>
 <tbody>
-<tr style="height: 37.2084px;">
-<td style="width: 177px; height: 37.2084px; text-align: center;"><strong>Member</strong></td>
-<td style="width: 338px; height: 37.2084px; text-align: center;"><strong>Assignments</strong></td>
+<tr style="height: 37px;">
+<td style="width: 177px; height: 37px; text-align: center;"><strong>Member</strong></td>
+<td style="width: 338px; height: 37px; text-align: center;"><strong>Assignments</strong></td>
 </tr>
 <tr style="height: 1px;">
 <td style="width: 177px; height: 1px; text-align: center;"><a href="https://github.com/40623202">40623202 吳姍蓉</a></td>
@@ -44,9 +44,9 @@
 <td style="width: 177px; height: 11px; text-align: center;"><a href="https://github.com/40623220">40623220 蔡崇廷</a></td>
 <td style="width: 338px; height: 11px; text-align: center;"><span>V-rep模擬</span></td>
 </tr>
-<tr style="height: 45px;">
-<td style="width: 177px; height: 45px; text-align: center;"><a href="https://github.com/40623236">40623236 黃子峰</a></td>
-<td style="width: 338px; height: 45px; text-align: center;"><span>V-rep模擬</span></td>
+<tr style="height: 35px;">
+<td style="width: 177px; height: 35px; text-align: center;"><a href="https://github.com/40623236">40623236 黃子峰</a></td>
+<td style="width: 338px; height: 35px; text-align: center;"><span>V-rep模擬</span></td>
 </tr>
 <tr style="height: 37px;">
 <td style="width: 177px; height: 37px; text-align: center;"><a href="https://github.com/40623247">40623247 廖峻祥</a></td>
@@ -163,10 +163,52 @@ IdentityFile "y:\home\.ssh\id_rsa"
 TCPKeepAlive yes
 IdentitiesOnly yes</pre>
 <h2>Week6</h2>
-<h2>Week7</h2>
+<p>Ungit 近端版本分支合併，以及小組遠端推送問題。處理過程橫跨 Week6 週末到 Wee7 課程時段。</p>
+<ul>
+<li><strong>解決推送問題：方案1.</strong>
+<ul>
+<li><strong>.config 內容 user1 修正為對應小組學號 40423217：</strong>
+<ul>
+<li>.config 內容所描述的 user1 and user2 是謂為同一使用者可以利用 user1 and user2 兩身分，分別進行不同對應帳號，行同一或不同倉儲進行編輯、推送等動作；也因此可以在 .config 內文追加 user3 user4 等身分，行上述作業模式。</li>
+</ul>
+</li>
+<li><strong>遂根據上述：20190329推送問題：</strong>
+<ul>
+<li>可能為 .config 內文 user1 並未修正為小組對應學號 40423217 ，遂無法執行 ssh 在小組推送時的身分驗證。</li>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe <br/>- -H 140.130.17.32:3128<br/>- <br/>- for 40423217<br/>- url = git@github.com_40423217:mdekmol/cd2019b-task1-2019cdb_t1_g2.git<br/>- Host github.com_40423217<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_40423217"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- <br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_user2"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+<li>
+<p><strong>持續嘗試推送，在 ungit 視窗出現錯誤：</strong></p>
+<ul>
+<li>
+<p>- connect --- simple relaying command via proxy.<br/>- Version 1.105<br/>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br/>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br/>- [-T proxy-server[:port]]<br/>- [-c telnet-proxy-command]<br/>- host port<br/>- ssh_exchange_identification: Connection closed by remote host<br/>- fatal: Could not read from remote repository.</p>
+<p>Please make sure you have the correct access rights<br/>- and the repository exists.</p>
+</li>
+<li><img alt="" height="333" src="/images/2019April09-143745Tuesday.png" width="500"/></li>
+</ul>
+</li>
+<li>
+<p><strong></strong></p>
+</li>
+<li>
+<p></p>
+ <strong>針對方案 1 狀況處理：</strong><br/>
+<ul>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>在未指定proxy進行推送時出現錯誤，仍可持續進行推送</p>
+<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"/></p><h2>Week7</h2>
 <h2>Week8</h2>
 <h2>Week9</h2>
 <h1>Onshape</h1>
+<h2>Process</h2>
+<h2 class="tw-data-text tw-ta tw-text-medium" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="en" tabindex="0">Combination</span></h2>
+<p><span lang="en" tabindex="0"><img caption="false" height="406" src="/images/chrome_nFDX7M7gVd.png" width="753"/></span></p>
 <h1>V-rep</h1>
 <h1>Experience</h1>
 <h2>40623202</h2>
@@ -197,7 +239,7 @@ IdentitiesOnly yes</pre>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/15</td>
 <td style="width: 93px; text-align: center;"><span>Week 4</span></td>
-<td style="width: 350px;">完成系己製作的可攜程式，使用kungit提交、推送資料。</td>
+<td style="width: 350px;">完成自己製作的可攜程式，使用kungit提交、推送資料。</td>
 </tr>
 <tr>
 <td style="width: 86px; text-align: center;">2019/03/22</td>
@@ -225,60 +267,61 @@ IdentitiesOnly yes</pre>
 <td style="width: 350px;"></td>
 </tr>
 </tbody>
-</table><h2>40623209</h2>
+</table>
+<h2>40623209</h2>
 <table border="2" style="width: 531px; border-color: #000000;"><caption></caption>
 <tbody>
-<tr>
-<td style="width: 91px; text-align: center;"><span>Date</span></td>
-<td style="width: 93px; text-align: center;">
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;"><span>Date</span></td>
+<td style="width: 93px; text-align: center; height: 49px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" dir="ltr" id="tw-target-text"><span lang="en" tabindex="0">Week</span></pre>
 </td>
-<td style="width: 345px; text-align: center;"><span>Experience</span></td>
+<td style="width: 345px; text-align: center; height: 49px;"><span>Experience</span></td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/02/22</td>
-<td style="width: 93px; text-align: center;">Week 1</td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/02/22</td>
+<td style="width: 93px; text-align: center; height: 49px;">Week 1</td>
+<td style="width: 345px; height: 49px;">這學期的專題報告要用亂數分組覺得很刺激，所以在第一週我們學了如何使用亂數分組程式，也說明了本學期的評分方式與取分項目 。</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/03/01</td>
-<td style="width: 93px; text-align: center;"><span>Week 2</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/03/01</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 2</span></td>
+<td style="width: 345px; height: 49px; text-align: center;">228放假</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/03/08</td>
-<td style="width: 93px; text-align: center;"><span>Week 3</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/03/08</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 3</span></td>
+<td style="width: 345px; height: 49px;">第三週開始建立可攜系統，有別於以往老師直接給，自己建立的時候更有挑戰性，雖然步驟都有，<br/>但總是會在某些地方卡住遇到困難，這時候就會考驗我們解決問題的能力了。</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/03/15</td>
-<td style="width: 93px; text-align: center;"><span>Week 4</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/03/15</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 4</span></td>
+<td style="width: 345px; height: 49px;">第四週繼續建立可攜系統，並解決第三週的問題，目前遇到最大的困難是<span>使用kungit提交、推送資料失敗。</span></td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/03/22</td>
-<td style="width: 93px; text-align: center;"><span>Week 5</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/03/22</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 5</span></td>
+<td style="width: 345px; height: 49px;">第五週終於解決了前兩週的問題，將各自的可攜系統都架設好，也改用了ssh，這樣以後提交推送都不用打帳號密碼，一切都方便許多。</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/03/29</td>
-<td style="width: 93px; text-align: center;"><span>Week 6</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/03/29</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 6</span></td>
+<td style="width: 345px; height: 49px;">第六周我做了實習任務二bubbleRob的部分，因為教學是原文地所以花了一點時間，重做了很多次最後才做出來，也將拍攝影片放到youtube上。</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/04/05</td>
-<td style="width: 93px; text-align: center;"><span>Week 7</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/04/05</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 7</span></td>
+<td style="width: 345px; height: 49px; text-align: center;">清明節放假</td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/04/12</td>
-<td style="width: 93px; text-align: center;"><span>Week 8</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/04/12</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 8</span></td>
+<td style="width: 345px; height: 49px;"></td>
 </tr>
-<tr>
-<td style="width: 91px; text-align: center;">2019/04/19</td>
-<td style="width: 93px; text-align: center;"><span>Week 9</span></td>
-<td style="width: 345px;"></td>
+<tr style="height: 49px;">
+<td style="width: 91px; text-align: center; height: 49px;">2019/04/19</td>
+<td style="width: 93px; text-align: center; height: 49px;"><span>Week 9</span></td>
+<td style="width: 345px; height: 49px;"></td>
 </tr>
 </tbody>
 </table>
@@ -621,7 +664,8 @@ IdentitiesOnly yes</pre>
 <td style="width: 347.698px;"></td>
 </tr>
 </tbody>
-</table><h2>40623250</h2>
+</table>
+<h2>40623250</h2>
 <table border="2" style="width: 527px; border-color: #000000;"><caption></caption>
 <tbody>
 <tr>
@@ -790,173 +834,195 @@ IdentitiesOnly yes</pre>
 <h4><span>on time : ●</span></h4>
 <h4><span>late : △</span></h4>
 <h4><span lang="en" tabindex="0">Leave:  ╳<br/><br/><span>National holiday:★</span><br/></span></h4>
-<table border="3" style="width: 457.549px; border-color: #f2eb8d;"><caption></caption>
+<table border="3" style="width: 569px; border-color: #f2eb8d;"><caption></caption>
 <tbody>
-<tr>
-<td style="width: 166px; text-align: center;">Member</td>
-<td style="width: 10px;">02/22</td>
-<td style="width: 49px;">03/01</td>
-<td style="width: 42px;">03/08</td>
-<td style="width: 10px;">03/15</td>
-<td style="width: 10px;">03/22</td>
-<td style="width: 10px;">03/29</td>
-<td style="width: 10px;">04/05</td>
-<td style="width: 10px;">04/12</td>
-<td style="width: 66.5486px;">04/19</td>
+<tr style="height: 49px;">
+<td style="width: 217px; text-align: center; height: 49px;">Member</td>
+<td style="width: 10px; height: 49px;">02/22</td>
+<td style="width: 49px; height: 49px;">03/01</td>
+<td style="width: 42px; height: 49px;">03/08</td>
+<td style="width: 10px; height: 49px;">03/15</td>
+<td style="width: 10px; height: 49px;">03/22</td>
+<td style="width: 10px; height: 49px;">03/29</td>
+<td style="width: 10px; height: 49px;">04/05</td>
+<td style="width: 10px; height: 49px;">04/12</td>
+<td style="width: 66px; height: 49px;">04/19</td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623202 吳姍蓉</td>
-<td style="width: 10px; text-align: center;">●</td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 55px;">
+<td style="width: 217px; text-align: center; height: 55px;">40623202 吳姍蓉</td>
+<td style="width: 10px; text-align: center; height: 55px;">●</td>
+<td style="width: 49px; text-align: center; height: 55px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
-</tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623209 李芳瑜</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<td style="width: 42px; text-align: center; height: 55px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 55px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 55px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 55px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 55px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 10px; text-align: center; height: 55px;"><span>●</span></td>
+<td style="width: 66px; height: 55px;"></td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623214 吳家文</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623209 李芳瑜</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
-</tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623215 吳柏毅</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623220 蔡崇廷</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623214 吳家文</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
-</tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623236 黃子峰</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623247 廖峻祥</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623215 吳柏毅</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
-</tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623249 李秉樺</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623250 湯峻傑</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623220 蔡崇廷</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
-</tr>
-<tr>
-<td style="width: 166px; text-align: center;">40623251 鄧靖宣</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
 </tr>
-<tr>
-<td style="width: 166px; text-align: center;">40423217 阮奕誠</td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 49px; text-align: center;"><span>●</span></td>
-<td style="width: 42px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;"><span>●</span></td>
-<td style="width: 10px; text-align: center;">
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623236 黃子峰</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
 <pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
 </td>
-<td style="width: 10px;"></td>
-<td style="width: 66.5486px;"></td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623247 廖峻祥</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623249 李秉樺</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623250 湯峻傑</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40623251 鄧靖宣</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
+</tr>
+<tr style="height: 68px;">
+<td style="width: 217px; text-align: center; height: 68px;">40423217 阮奕誠</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 49px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 42px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 10px; text-align: center; height: 68px;">
+<pre class="tw-data-text tw-ta tw-text-large" data-fulltext="" data-placeholder="翻譯" id="tw-target-text"><span lang="en" tabindex="0"><span>★</span></span></pre>
+</td>
+<td style="width: 10px; text-align: center; height: 68px;"><span>●</span></td>
+<td style="width: 66px; height: 68px;"></td>
 </tr>
 </tbody>
 </table>
