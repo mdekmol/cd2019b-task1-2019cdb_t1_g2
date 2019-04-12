@@ -99,18 +99,19 @@ $(document).ready(doSearch);
 <ul>
 <li>
 <p>- connect --- simple relaying command via proxy.<br/>- Version 1.105<br/>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br/>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br/>- [-T proxy-server[:port]]<br/>- [-c telnet-proxy-command]<br/>- host port<br/>- ssh_exchange_identification: Connection closed by remote host<br/>- fatal: Could not read from remote repository.</p>
-<p>- Please make sure you have the correct access rights<br/>- and the repository exists.</p>
+<p>Please make sure you have the correct access rights<br/>- and the repository exists.</p>
 </li>
+<li><img alt="" height="333" src="./../images/2019April09-143745Tuesday.png" width="500"/></li>
 </ul>
 </li>
 <li>
 <p><strong></strong></p>
-<p><strong></strong></p>
-<p><strong>針對方案 1 狀況處理：</strong></p>
-<ul>
-<li>
-<p>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</p>
 </li>
+<li>
+<p></p>
+ <strong>針對方案 1 狀況處理：</strong><br/>
+<ul>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
 </ul>
 </li>
 </ul>
