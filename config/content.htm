@@ -77,7 +77,44 @@
 <p>首先修改這裡</p>
 <h1>Course</h1>
 <h2>week1</h2>
-<p>學習如何一次上傳多個圖檔, 並且學會如何引用, 並且設定圖片大小.</p>
+<h4>亂數分組程式</h4>
+<p><span>本程式主要功能是能夠快速的進行組員的隨機快速分配，讓程式一開始先載入固定的檔案(此範例就是txt檔)，內容是所有組員的名字，再讓使用者輸入組別數、組員人數，交由程式去分配，最後再讓程式將結果輸出成另一份的txt檔</span></p>
+<h4><span style="background-color: #ffcc00;">參考程式架構</span></h4>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
+filename = 'cdbw3_student_list.txt'
+# 每組人數
+num_in_one_group = 11
+# 組序由 1 開始
+group = 1
+# 各班分組後所得數列
+c2019 = []
+with open(filename) as f:
+    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除
+    read_data = f.read().splitlines() 
+print("共有 " + str(len(read_data)) + " 位學員")
+# 利用 shuffle 將數列隨機弄亂
+random.shuffle(read_data)
+for i in range(len(read_data)):
+    # 利用整數相除的餘數進行分組
+    if i%num_in_one_group == 0:
+        # 列出分隔符號
+        print("-"*20)
+        print("group " + str(group) +":")
+        # 在分組區隔時重置各組學員數列
+        group_list = []
+        print()
+        # 同時列出與分隔標註對應 i 的數列內容
+        print(read_data[i])
+        group_list.append(read_data[i])
+        group = group + 1
+    else:
+        # 逐一列出同組的其他學員
+        print(read_data[i])
+        group_list.append(read_data[i])
+    if i%num_in_one_group == 0:
+        c2019.append(group_list)
+# c2019 為該班分組後所得分組數列
+print(c2019)</pre>
 <h2>week2</h2>
 <p>網路與電腦程式只<g class="gr_ gr_258 gr-alert gr_gramm gr_inline_cards gr_run_anim Grammar only-ins replaceWithoutSep" data-gr-id="258" id="258">是工具,</g> 任何人希望與遠端的系統或成員溝通, 可以使用網路.</p>
 <p>任何人想要利用電腦的能力解決問題, 就必須學會編寫電腦程式, 與電腦溝通.</p>
@@ -202,7 +239,8 @@ IdentitiesOnly yes</pre>
 </li>
 </ul>
 <p>在未指定proxy進行推送時出現錯誤，仍可持續進行推送</p>
-<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"/></p><h2>Week7</h2>
+<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"/></p>
+<h2>Week7</h2>
 <h2>Week8</h2>
 <h2>Week9</h2>
 <h1>Onshape</h1>
@@ -282,7 +320,7 @@ IdentitiesOnly yes</pre>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/02/22</td>
 <td style="width: 93px; text-align: center; height: 49px;">Week 1</td>
-<td style="width: 345px; height: 49px;">這學期的專題報告要用亂數分組覺得很刺激，所以在第一週我們學了如何使用亂數分組程式，也說明了本學期的評分方式與取分項目 。</td>
+<td style="width: 345px; height: 49px;">第一週我們學了如何使用亂數分組程式，也說明了本學期的評分方式與取分項目 。</td>
 </tr>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/01</td>
@@ -292,12 +330,12 @@ IdentitiesOnly yes</pre>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/08</td>
 <td style="width: 93px; text-align: center; height: 49px;"><span>Week 3</span></td>
-<td style="width: 345px; height: 49px;">第三週開始建立可攜系統，有別於以往老師直接給，自己建立的時候更有挑戰性，雖然步驟都有，<br/>但總是會在某些地方卡住遇到困難，這時候就會考驗我們解決問題的能力了。</td>
+<td style="width: 345px; height: 49px;">第三週介紹ungit的設定與使用，亂數分組完畢</td>
 </tr>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/15</td>
 <td style="width: 93px; text-align: center; height: 49px;"><span>Week 4</span></td>
-<td style="width: 345px; height: 49px;">第四週繼續建立可攜系統，並解決第三週的問題，目前遇到最大的困難是<span>使用kungit提交、推送資料失敗。</span></td>
+<td style="width: 345px; height: 49px;">第四週<span>開始建立可攜系統，有別於以往老師直接給，自己建立的時候更有挑戰性，</span>目前遇到最大的困難是<span>使用kungit提交、推送資料失敗。</span></td>
 </tr>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/22</td>
@@ -307,7 +345,7 @@ IdentitiesOnly yes</pre>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/29</td>
 <td style="width: 93px; text-align: center; height: 49px;"><span>Week 6</span></td>
-<td style="width: 345px; height: 49px;">第六周我做了實習任務二bubbleRob的部分，因為教學是原文地所以花了一點時間，重做了很多次最後才做出來，也將拍攝影片放到youtube上。</td>
+<td style="width: 345px; height: 49px;">第六週做了實習任務二bubbleRob的部分，因為教學是原文地所以花了一點時間，重做了很多次最後才做出來，也將拍攝影片放到youtube上。</td>
 </tr>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/04/05</td>
@@ -1034,5 +1072,6 @@ IdentitiesOnly yes</pre>
 <p>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
 <p>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
+<p></p>
 <p></p>
 <p></p>
