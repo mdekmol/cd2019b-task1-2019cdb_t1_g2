@@ -30,7 +30,7 @@ DELETE_OUTPUT_DIRECTORY = True
 
 # Following items are often useful when publishing
 
-DISQUS_SITENAME = "kmolab-github"
+DISQUS_SITENAME = "mdecadp2018"
 DISQUS_DISPLAY_COUNTS = False
 #GOOGLE_ANALYTICS = ""
 
