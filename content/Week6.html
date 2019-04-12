@@ -78,5 +78,44 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7<br /><h1>Week6</h1>
-<br />Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7</div></section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7<br /><h1>Week6</h1>
+<p>Ungit 近端版本分支合併，以及小組遠端推送問題。處理過程橫跨 Week6 週末到 Wee7 課程時段。</p>
+<ul>
+<li><strong>解決推送問題：方案1.</strong>
+<ul>
+<li><strong>.config 內容 user1 修正為對應小組學號 40423217：</strong>
+<ul>
+<li>.config 內容所描述的 user1 and user2 是謂為同一使用者可以利用 user1 and user2 兩身分，分別進行不同對應帳號，行同一或不同倉儲進行編輯、推送等動作；也因此可以在 .config 內文追加 user3 user4 等身分，行上述作業模式。</li>
+</ul>
+</li>
+<li><strong>遂根據上述：20190329推送問題：</strong>
+<ul>
+<li>可能為 .config 內文 user1 並未修正為小組對應學號 40423217 ，遂無法執行 ssh 在小組推送時的身分驗證。</li>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe <br/>- -H 140.130.17.32:3128<br/>- <br/>- for 40423217<br/>- url = git@github.com_40423217:mdekmol/cd2019b-task1-2019cdb_t1_g2.git<br/>- Host github.com_40423217<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_40423217"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- <br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_user2"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+<li>
+<p><strong>持續嘗試推送，在 ungit 視窗出現錯誤：</strong></p>
+<ul>
+<li>
+<p>- connect --- simple relaying command via proxy.<br/>- Version 1.105<br/>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br/>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br/>- [-T proxy-server[:port]]<br/>- [-c telnet-proxy-command]<br/>- host port<br/>- ssh_exchange_identification: Connection closed by remote host<br/>- fatal: Could not read from remote repository.</p>
+<p>Please make sure you have the correct access rights<br/>- and the repository exists.</p>
+</li>
+<li><img alt="" height="333" src="./../images/2019April09-143745Tuesday.png" width="500"/></li>
+</ul>
+</li>
+<li>
+<p><strong></strong></p>
+</li>
+<li>
+<p></p>
+ <strong>針對方案 1 狀況處理：</strong><br/>
+<ul>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>在未指定proxy進行推送時出現錯誤，仍可持續進行推送</p>
+<p><img alt="" height="484" src="./../images/chrome_2019-04-12_14-13-42.png" width="500"/></p><br />Week5 << <a href='Week5.html'>Previous</a> <a href='Week7.html'>Next</a> >> Week7</div></section></div></body></html>
