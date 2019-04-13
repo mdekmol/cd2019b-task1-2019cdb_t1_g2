@@ -4,77 +4,98 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>./</loc>
-<lastmod>2019-03-21T21:54:22-00:00</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/</loc>
+<lastmod>2019-04-13T12:12:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./archives.html</loc>
-<lastmod>2019-03-21T21:54:22-00:00</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/archives.html</loc>
+<lastmod>2019-04-13T12:12:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tags.html</loc>
-<lastmod>2019-03-21T21:54:22-00:00</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/tags.html</loc>
+<lastmod>2019-04-13T12:12:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./categories.html</loc>
-<lastmod>2019-03-21T21:54:22-00:00</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/categories.html</loc>
+<lastmod>2019-04-13T12:12:25-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./pages/about/</loc>
-<lastmod>2019-03-21T21:36:18+08:00</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/pages/about/</loc>
+<lastmod>2019-04-13T12:02:46+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./2018-Fall-Python-Getting-Started.html</loc>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/2018-Fall-W8.html</loc>
+<lastmod>2019-04-12T04:12:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/2018-Fall-W1.html</loc>
+<lastmod>2019-02-22T04:12:00+08:00</lastmod>
+<changefreq>monthly</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/2018-Fall-Python-Getting-Started.html</loc>
 <lastmod>2018-09-11T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./2018-Fall-32-bit-Windows.html</loc>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/2018-Fall-32-bit-Windows.html</loc>
 <lastmod>2018-09-10T11:00:00+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./category/misc.html</loc>
-<lastmod>2018-09-10T11:00:00+08:06</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/category/misc.html</loc>
+<lastmod>2019-04-12T04:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./category/python.html</loc>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/category/python.html</loc>
 <lastmod>2018-09-11T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./tag/2018fallcp.html</loc>
-<lastmod>2018-09-11T11:00:00+08:06</lastmod>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/tag/2018fallcp.html</loc>
+<lastmod>2019-04-12T04:12:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>./author/yen.html</loc>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/author/bg2.html</loc>
+<lastmod>2019-04-12T04:12:00+08:06</lastmod>
+<changefreq>daily</changefreq>
+<priority>0.5</priority>
+</url>
+
+<url>
+<loc>https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/author/yen.html</loc>
 <lastmod>2018-09-11T11:00:00+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
