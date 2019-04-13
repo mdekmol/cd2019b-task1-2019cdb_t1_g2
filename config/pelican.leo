@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Created by Leo: http://leoeditor.com/leo_toc.html -->
 <leo_file xmlns:leo="http://leoeditor.com/namespaces/leo-python-editor/1.1" >
-<leo_header file_format="2"/>
-<globals/>
+<leo_header file_format="2" tnodes="0" max_tnode_index="0" clone_windows="0"/>
+<globals body_outline_ratio="0.5" body_secondary_ratio="0.5">
+	<global_window_position top="50" left="50" height="500" width="700"/>
+	<global_log_window_position top="0" left="0" height="0" width="0"/>
+</globals>
 <preferences/>
 <find_panel_settings/>
 <vnodes>
@@ -10,14 +13,14 @@
 <v t="yen.20170108171605.2"><vh>@data qt-gui-plugin-style-sheet</vh></v>
 <v t="yen.20170108171605.3"><vh>@string initial_split_orientation = horizontal</vh></v>
 </v>
-<v t="yen.20170108171733.1"><vh>@path ../</vh>
+<v t="yen.20170108171733.1" a="E"><vh>@path ../</vh>
 <v t="leo.20180115150519.1"><vh>@edit index.html</vh></v>
 <v t="yen.20170108171733.3"><vh>@edit README.md</vh></v>
 <v t="yen.20170108171733.4"><vh>@edit .gitignore</vh></v>
-<v t="leo.20170908162839.1"><vh>沒有 disqus 論壇</vh>
+<v t="leo.20170908162839.1" a="E"><vh>沒有 disqus 論壇</vh>
 <v t="yen.20170108171733.2"><vh>@button local-blog</vh></v>
 </v>
-<v t="leo.20170908162904.1"><vh>有 disqus 論壇</vh>
+<v t="leo.20170908162904.1" a="E"><vh>有 disqus 論壇</vh>
 <v t="leo.20170709224430.1"><vh>@button github-blog</vh></v>
 </v>
 <v t="yen.20170108171733.5"><vh>Pelican 設定</vh>
@@ -63,10 +66,16 @@
 </v>
 </v>
 <v t="leo.20170710022054.1"><vh>可以另建節點存放 markdown 目錄下的 md 檔案</vh></v>
-<v t="leo.20170710022041.1"><vh>@path markdown</vh>
-<v t="leo.20180115115910.1"><vh>2018</vh>
-<v t="leo.20180423103639.1"><vh>2018 Fall CP 課程</vh>
+<v t="leo.20170710022041.1" a="E"><vh>@path markdown</vh>
+<v t="leo.20180115115910.1" a="E"><vh>2018</vh>
+<v t="leo.20180423103639.1" a="E"><vh>2018 Fall CP 課程</vh>
 <v t="leo.20190412173002.1"><vh>@edit 20190412.md</vh></v>
+<v t="leo.20190413122001.1"><vh>@edit 20190405.md</vh></v>
+<v t="leo.20190413121624.1"><vh>@edit 20190329.md</vh></v>
+<v t="leo.20190413121628.1"><vh>@edit 20190322.md</vh></v>
+<v t="leo.20190413121631.1"><vh>@edit 20190315.md</vh></v>
+<v t="leo.20190413121633.1"><vh>@edit 20190308.md</vh></v>
+<v t="leo.20190413121649.1"><vh>@edit 20190301.md</vh></v>
 <v t="leo.20190412150417.1"><vh>@edit 20190222.md</vh></v>
 <v t="leo.20180909205246.1"><vh>@edit 20180911.md</vh></v>
 <v t="leo.20180423103656.1"><vh>@edit 20180910.md</vh></v>
