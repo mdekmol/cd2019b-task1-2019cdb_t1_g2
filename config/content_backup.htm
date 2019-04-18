@@ -68,7 +68,7 @@
 </table>
 <h1>Directory Structure</h1>
 <p>第二位想要編輯這裡</p>
-<p><iframe width="560" height="315" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" src="https://www.youtube.com/embed/9A-hg32eD-s"></iframe></p>
+<p><iframe allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/9A-hg32eD-s" width="560"></iframe></p>
 <p>CMSimfly 的動態系統採用 Python3 + Flask 建構, 並且利用 Beatifulsoup 解讀位於 contig 目錄中的 content.htm 超文件檔案.</p>
 <p>content.htm 檔案可以透過動態系統中的 generate_pages 功能, 將超文件轉為位於 content 目錄中的個別頁面檔案.</p>
 <p>動態系統與靜態系統則共用 downloads, images, static 等目錄, 其中 downloads 目錄存放在動態系統上傳的文件檔, 而 images 目錄則存放動態系統所上傳的影像檔案, 包括 jpg, png 與 gif 等格式圖檔.</p>
@@ -127,16 +127,16 @@ for i in range(len(read_data)):
 print(c2019)</pre>
 <h2>week2</h2>
 <p style="text-align: center;">228和平紀念日放假</p>
-<p><img caption="false" height="700" src="blob:https://localhost:9443/ed477e79-c932-44cd-8173-06e5da17b4d6" width="700"></p>
+<p><img caption="false" height="700" src="blob:https://localhost:9443/ed477e79-c932-44cd-8173-06e5da17b4d6" width="700"/></p>
 <h2>week3</h2>
 <h4>配置ungit</h4>
-<p>根據&nbsp;<a href="https://2019wcm.blogspot.com/2019/03/ungit.html">https://2019wcm.blogspot.com/2019/03/ungit<g class="gr_ gr_265 gr-alert gr_gramm gr_inline_cards gr_run_anim Style replaceWithoutSep" data-gr-id="265" id="265">.html</g></a>&nbsp;的設定, 完成 <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="121" id="121">ungit</g> 配置.</p>
-<p><span>教學影片：</span><span>&nbsp;</span><a href="https://www.youtube.com/watch?v=lB-spECfhr8">https://www.youtube.com/watch?v=lB-spECfhr8</a><span>&nbsp;</span></p>
+<p>根據 <a href="https://2019wcm.blogspot.com/2019/03/ungit.html">https://2019wcm.blogspot.com/2019/03/ungit<g class="gr_ gr_265 gr-alert gr_gramm gr_inline_cards gr_run_anim Style replaceWithoutSep" data-gr-id="265" id="265">.html</g></a> 的設定, 完成 <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="121" id="121">ungit</g> 配置.</p>
+<p><span>教學影片：</span><span> </span><a href="https://www.youtube.com/watch?v=lB-spECfhr8">https://www.youtube.com/watch?v=lB-spECfhr8</a><span> </span></p>
 <p>1.<span>下載ungit與node.js程式碼，然後將nodejs放入kmol_2019的data中。</span></p>
-<p><span><img caption="false" height="631" src="/images/1555593357495.jpg" width="700"></span></p>
+<p><span><img caption="false" height="631" src="/images/1555593357495.jpg" width="700"/></span></p>
 <p><span>2.修改 ungit 的內容</span></p>
 <p>(1)路徑如下:</p>
-<p><img caption="false" height="588" src="/images/1555593574787.jpg" width="650"></p>
+<p><img caption="false" height="588" src="/images/1555593574787.jpg" width="650"/></p>
 <p>(2)修改內容:</p>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#!/bin/sh<span></span>
 basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")<span></span>
@@ -155,11 +155,11 @@ else <span></span>
 fi<span></span>
 exit $ret<span></span></pre>
 <p>(3)修改後的內容:</p>
-<p><img alt="" height="737" src="/images/1555593625426.jpg" width="570"></p>
-<p>3.<span>在 start.bat 中加入&nbsp;</span><span>set USERPROFILE=%Disk%:\home</span></p>
-<p><span><img caption="false" height="394" src="/images/modify start w4.JPG" width="950"></span></p>
-<h4>git<span>&nbsp;</span><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17"><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17">http</g></g>&nbsp;與 ssh</h4>
-<p>利用 ssh 對 git 改版, 必須使用&nbsp; home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
+<p><img alt="" height="737" src="/images/1555593625426.jpg" width="570"/></p>
+<p>3.<span>在 start.bat 中加入 </span><span>set USERPROFILE=%Disk%:\home</span></p>
+<p><span><img caption="false" height="394" src="/images/modify start w4.JPG" width="950"/></span></p>
+<h4>git<span> </span><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17"><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17">http</g></g> 與 ssh</h4>
+<p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
 <pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p
 
 Host github.com
@@ -182,51 +182,51 @@ IdentityFile "y:\home\.ssh\id_rsa"
 TCPKeepAlive yes
 IdentitiesOnly yes</pre>
 <h2>Week4</h2>
-<p><span>在配置好的 ungit&nbsp;</span><span>的環境下，利</span><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">用 ssh 與 private key 對 Github 倉儲提交推送</yt-formatted-string><span>。</span></p>
+<p><span>在配置好的 ungit </span><span>的環境下，利</span><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">用 ssh 與 private key 對 Github 倉儲提交推送</yt-formatted-string><span>。</span></p>
 <p><strong>01：</strong></p>
 <ol>
 <li>clone 位址：git@github.com:mdekmol/cd2019b-task1-2019cdb_t1_g2.git</li>
 <li>(cmd視窗執行)Y:/cd project/cd <g class="gr_ gr_52 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="52" id="52">cmstest</g>/python <g class="gr_ gr_55 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="55" id="55">wsgi</g>.py 進入將 <g class="gr_ gr_53 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="53" id="53">cmstest</g> clone 的檔案位址</li>
 <li>https://localhost：9443 進入測試網站</li>
-<li>進行改版( save &rarr; generate_page )</li>
+<li>進行改版( save → generate_page )</li>
 </ol>
 <ul>
-<li>Q：同步推送的位址會在哪裡？<br>&nbsp; &nbsp; &nbsp; 近端ungit更新後可以就近端圖像檢視其版本序列所在分支，若權限有取得可行遠端推送，所推送對應的倉儲為 mdecourse。</li>
-<li>Q：怎麼曉得更新的位址在哪？<br>&nbsp; &nbsp; &nbsp; 由當初 git clone 的倉儲即是。</li>
+<li>Q：同步推送的位址會在哪裡？<br/>      近端ungit更新後可以就近端圖像檢視其版本序列所在分支，若權限有取得可行遠端推送，所推送對應的倉儲為 mdecourse。</li>
+<li>Q：怎麼曉得更新的位址在哪？<br/>      由當初 git clone 的倉儲即是。</li>
 </ul>
-<p><strong>02：&nbsp;.config (由 SciTE 開啟後內容)</strong></p>
-<p style="padding-left: 30px;">[user]<br>name = 學號<br>&nbsp; &nbsp;&nbsp;<span>&rarr;予以使用者判讀，未有系統功能</span><br>email = 學號<a href="mailto:scrum3@mde.tw">@nfu.edu.</a><a href="mailto:scrum3@mde.tw">.tw<br></a>&nbsp; &nbsp;&nbsp;<span>&rarr;予以系統行身分確認，使用者須改為自己對應此系統的 <g class="gr_ gr_47 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="47" id="47">gmail</g></span><br>[http]<br>proxy = <a href="http://140.130.17.42:3128">http://140.130.17.42:3128<br></a>&nbsp; &nbsp;&nbsp;<span>&rarr;為指定連線 proxy，使用者若未在執行裝置上指定(該) proxy，系統會自行抓取該裝置之連線位址</span></p>
+<p><strong>02： .config (由 SciTE 開啟後內容)</strong></p>
+<p style="padding-left: 30px;">[user]<br/>name = 學號<br/>    <span>→予以使用者判讀，未有系統功能</span><br/>email = 學號<a href="mailto:scrum3@mde.tw">@nfu.edu.</a><a href="mailto:scrum3@mde.tw">.tw<br/></a>    <span>→予以系統行身分確認，使用者須改為自己對應此系統的 <g class="gr_ gr_47 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="47" id="47">gmail</g></span><br/>[http]<br/>proxy = <a href="http://140.130.17.42:3128">http://140.130.17.42:3128<br/></a>    <span>→為指定連線 proxy，使用者若未在執行裝置上指定(該) proxy，系統會自行抓取該裝置之連線位址</span></p>
 <p><strong>03：</strong></p>
 <ol>
-<li>&nbsp;(cmd視窗執行)Y:/cd project/cd <g class="gr_ gr_48 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="48" id="48">cmstest</g>/<g class="gr_ gr_51 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="51" id="51">kungit</g></li>
-<li>&nbsp;Google chrome 彈出視窗出現 error 訊息：<br>fatal: unable to access 'https://github.com/mdecourse/cmstest/': Received HTTP code 403 from proxy after CONNECT</li>
+<li> (cmd視窗執行)Y:/cd project/cd <g class="gr_ gr_48 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="48" id="48">cmstest</g>/<g class="gr_ gr_51 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="51" id="51">kungit</g></li>
+<li> Google chrome 彈出視窗出現 error 訊息：<br/>fatal: unable to access 'https://github.com/mdecourse/cmstest/': Received HTTP code 403 from proxy after CONNECT</li>
 </ol>
 <ul>
 <li>進入Google chrome <g class="gr_ gr_49 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="49" id="49">ungit</g> 彈出視窗，Erroe 警告內文仍可檢視先前版本編輯，發現先前版本新增者為 Scrum，並且編輯紀錄為 5 days ago(且為上週課堂操作示範改版內容)。</li>
 <li>Q：言下之意我判斷之前在此所更新的該 <g class="gr_ gr_50 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="50" id="50">cmstest</g> 和示範教材為同一個版本序列，遂若我端逕自更新成立會覆蓋教材，且連同 https://github.com/mdecourse/cmstest.git 位址也將被覆蓋？</li>
 </ul>
-<p style="padding-left: 30px;"><img alt="" height="538" src="/images/chrome_2019-03-14_22-25-17.png" width="500"></p>
+<p style="padding-left: 30px;"><img alt="" height="538" src="/images/chrome_2019-03-14_22-25-17.png" width="500"/></p>
 <ul>
-<li><strong>&rarr;為"沒有執行權限"該狀況因為 </strong><g class="gr_ gr_56 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="56" id="56">cmstest</g><strong> 是由 </strong><g class="gr_ gr_59 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="59" id="59">mdeocurse</g><strong> 進行 clone，所對應的倉儲並未擁有編輯權限，遂在過去的編輯仍可以在"近端" </strong><g class="gr_ gr_57 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="57" id="57">ungit</g><strong> 進行檢視，但無法推送至遠端 </strong><g class="gr_ gr_58 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="58" id="58">github</g></li>
+<li><strong>→為"沒有執行權限"該狀況因為 </strong><g class="gr_ gr_56 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="56" id="56">cmstest</g><strong> 是由 </strong><g class="gr_ gr_59 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling" data-gr-id="59" id="59">mdeocurse</g><strong> 進行 clone，所對應的倉儲並未擁有編輯權限，遂在過去的編輯仍可以在"近端" </strong><g class="gr_ gr_57 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="57" id="57">ungit</g><strong> 進行檢視，但無法推送至遠端 </strong><g class="gr_ gr_58 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="58" id="58">github</g></li>
 </ul>
-<p>詳見：&nbsp;&nbsp;<a href="https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki">https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki</a>&nbsp;</p>
+<p>詳見：  <a href="https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki">https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2/wiki</a> </p>
 <p>04：</p>
-<p style="padding-left: 30px;">根據&nbsp;<a href="https://www.youtube.com/watch?v=t4PslV5Abjs">https://www.youtube.com/watch?v=t4PslV5Abjs&nbsp;</a>&nbsp;<br><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">說明如何利用 ssh 與 private key 對 Github 倉儲提交推送，直接執行 git push指令行推送，不需要重複身分驗證。</yt-formatted-string></p>
-<p style="padding-left: 30px;">原先建立的 <g class="gr_ gr_60 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" data-gr-id="60" id="60">Y :</g> \ 目錄下並沒有 PortableGit 資料夾，遂無法建立對應路徑。於是逕自下載 PortableGit-2.21.0 版本，並設定 path 路徑。<br><span>PortableGit-2.21.0下載連結：</span>&nbsp;<a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a>&nbsp;</p>
+<p style="padding-left: 30px;">根據 <a href="https://www.youtube.com/watch?v=t4PslV5Abjs">https://www.youtube.com/watch?v=t4PslV5Abjs </a> <br/><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">說明如何利用 ssh 與 private key 對 Github 倉儲提交推送，直接執行 git push指令行推送，不需要重複身分驗證。</yt-formatted-string></p>
+<p style="padding-left: 30px;">原先建立的 <g class="gr_ gr_60 gr-alert gr_gramm gr_inline_cards gr_run_anim Style multiReplace" data-gr-id="60" id="60">Y :</g> \ 目錄下並沒有 PortableGit 資料夾，遂無法建立對應路徑。於是逕自下載 PortableGit-2.21.0 版本，並設定 path 路徑。<br/><span>PortableGit-2.21.0下載連結：</span> <a href="https://git-scm.com/download/win">https://git-scm.com/download/win</a> </p>
 <ul>
 <li style="padding-left: 30px;">set path9=%Disk%:\PortableGit;%Disk%:\PortableGit\bin;</li>
 <li style="padding-left: 30px;">在 path 後加上 %path%</li>
 </ul>
-<p style="padding-left: 30px;"><img alt="" height="513" src="/images/Sc1_2019-03-23_14-03-01.png" width="500"></p>
-<p style="padding-left: 30px;"><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/H9K3jZ2j5eA"></iframe> <br><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">實際操作:</yt-formatted-string></p>
+<p style="padding-left: 30px;"><img alt="" height="513" src="/images/Sc1_2019-03-23_14-03-01.png" width="500"/></p>
+<p style="padding-left: 30px;"><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/H9K3jZ2j5eA" width="500"></iframe> <br/><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">實際操作:</yt-formatted-string></p>
 <p style="padding-left: 30px;"><yt-formatted-string class="style-scope ytd-video-primary-info-renderer" force-default-style="">國立虎尾科技大學 機械設計工程系 40423217 利用 ssh 與 private key 對 Github 倉儲提交推送 V3畫質提升</yt-formatted-string></p>
 <h2>Week5</h2>
-<p><a href="https://cad.onshape.com/documents/5a59c9c739e3ae2de7916f88/w/f34a992c0364ffb3e202d53f/e/9b5dc8b2573d0b775263056b" title="Onshape_Football_Table">Onshape_Football_Table</a>&nbsp;模型檔連結</p>
+<p><a href="https://cad.onshape.com/documents/5a59c9c739e3ae2de7916f88/w/f34a992c0364ffb3e202d53f/e/9b5dc8b2573d0b775263056b" title="Onshape_Football_Table">Onshape_Football_Table</a> 模型檔連結</p>
 <p><strong>Football Table Onshape module Youtube</strong></p>
-<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_01</strong><a href="https://youtu.be/WsVKbFn0rT0" rel="nofollow"><br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/WsVKbFn0rT0"></iframe><br></a></p>
-<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_02</strong><a href="https://youtu.be/X7jzs3bUf1s" rel="nofollow"><br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/X7jzs3bUf1s"></iframe></a></p>
-<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_03</strong><a href="https://youtu.be/I9z_rtaLKRg" rel="nofollow"><br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/I9z_rtaLKRg"></iframe></a></p>
-<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_04</strong><br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/sNRiHZOTNcE"></iframe><strong></strong></p>
+<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_01</strong><a href="https://youtu.be/WsVKbFn0rT0" rel="nofollow"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/WsVKbFn0rT0" width="500"></iframe><br/></a></p>
+<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_02</strong><a href="https://youtu.be/X7jzs3bUf1s" rel="nofollow"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/X7jzs3bUf1s" width="500"></iframe></a></p>
+<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_03</strong><a href="https://youtu.be/I9z_rtaLKRg" rel="nofollow"><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/I9z_rtaLKRg" width="500"></iframe></a></p>
+<p style="padding-left: 30px;"><strong>Onshape_Football_Table_module_04</strong><br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/sNRiHZOTNcE" width="500"></iframe><strong></strong></p>
 <h2>Week 6</h2>
 <p>Ungit 近端版本分支合併，以及小組遠端推送問題。處理過程橫跨 Week6 週末到 Wee7 課程時段。</p>
 <ul>
@@ -240,17 +240,17 @@ IdentitiesOnly yes</pre>
 <li><strong>遂根據上述：20190329推送問題：</strong>
 <ul>
 <li>可能為 .config 內文 user1 並未修正為小組對應學號 40423217 ，遂無法執行 ssh 在小組推送時的身分驗證。</li>
-<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe <br>- -H 140.130.17.32:3128<br>- <br>- for 40423217<br>- url = git@github.com_40423217:mdekmol/cd2019b-task1-2019cdb_t1_g2.git<br>- Host github.com_40423217<br>- User git<br>- Port 22<br>- Hostname github.com<br>- <br>- IdentityFile "y:\home\.ssh\id_rsa_40423217"<br>- <br>- TCPKeepAlive yes<br>- IdentitiesOnly yes<br>- <br>- for user2<br>- url = git@github.com_user2:user2/user2.com.git<br>- Host github.com_user2<br>- Port 22<br>- Hostname github.com<br>- <br>- IdentityFile "y:\home\.ssh\id_rsa_user2"<br>- <br>- TCPKeepAlive yes<br>- IdentitiesOnly yes</li>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe <br/>- -H 140.130.17.32:3128<br/>- <br/>- for 40423217<br/>- url = git@github.com_40423217:mdekmol/cd2019b-task1-2019cdb_t1_g2.git<br/>- Host github.com_40423217<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_40423217"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- <br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- <br/>- IdentityFile "y:\home\.ssh\id_rsa_user2"<br/>- <br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
 </ul>
 </li>
 <li>
 <p><strong>持續嘗試推送，在 ungit 視窗出現錯誤：</strong></p>
 <ul>
 <li>
-<p>- connect --- simple relaying command via proxy.<br>- Version 1.105<br>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br>- [-T proxy-server[:port]]<br>- [-c telnet-proxy-command]<br>- host port<br>- ssh_exchange_identification: Connection closed by remote host<br>- fatal: Could not read from remote repository.</p>
-<p>Please make sure you have the correct access rights<br>- and the repository exists.</p>
+<p>- connect --- simple relaying command via proxy.<br/>- Version 1.105<br/>- usage: Y:\PortableGit\mingw64\bin\connect.exe [-dnhst45] [-p local-port] <br/>- [-H proxy-server[:port]] [-S [user@]socks-server[:port]] <br/>- [-T proxy-server[:port]]<br/>- [-c telnet-proxy-command]<br/>- host port<br/>- ssh_exchange_identification: Connection closed by remote host<br/>- fatal: Could not read from remote repository.</p>
+<p>Please make sure you have the correct access rights<br/>- and the repository exists.</p>
 </li>
-<li><img alt="" height="333" src="/images/2019April09-143745Tuesday.png" width="500"></li>
+<li><img alt="" height="333" src="/images/2019April09-143745Tuesday.png" width="500"/></li>
 </ul>
 </li>
 <li>
@@ -258,53 +258,53 @@ IdentitiesOnly yes</pre>
 </li>
 <li>
 <p></p>
-&nbsp;<strong>針對方案 1 狀況處理：</strong><br>
+ <strong>針對方案 1 狀況處理：</strong><br/>
 <ul>
-<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br>- for user1<br>- url = git@github.com_user1:user1/cmstest.git<br>- Host github.com_user1<br>- User git<br>- Port 22<br>- Hostname github.com<br>- IdentityFile "y:\home.ssh\id_rsa_user1"<br>- TCPKeepAlive yes<br>- IdentitiesOnly yes<br>- for user2<br>- url = git@github.com_user2:user2/user2.com.git<br>- Host github.com_user2<br>- Port 22<br>- Hostname github.com<br>- IdentityFile "y:\home.ssh\id_rsa_user2"<br>- TCPKeepAlive yes<br>- IdentitiesOnly yes</li>
+<li>- ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H proxy.kmol.info:3128 %h %p(為加上此程式，短暫的不再出現錯誤後可執行檢視，不曉得其功能)<br/>- for user1<br/>- url = git@github.com_user1:user1/cmstest.git<br/>- Host github.com_user1<br/>- User git<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user1"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes<br/>- for user2<br/>- url = git@github.com_user2:user2/user2.com.git<br/>- Host github.com_user2<br/>- Port 22<br/>- Hostname github.com<br/>- IdentityFile "y:\home.ssh\id_rsa_user2"<br/>- TCPKeepAlive yes<br/>- IdentitiesOnly yes</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
 <p>在未指定proxy進行推送時出現錯誤，仍可持續進行推送</p>
-<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"></p>
+<p><img alt="" height="484" src="/images/chrome_2019-04-12_14-13-42.png" width="500"/></p>
 <p></p>
 <h2>Week7</h2>
 <p style="text-align: center;">清明節放假</p>
-<p><img alt="" height="600" src="/images/CL006.jpg" width="650"></p>
+<p><img alt="" height="600" src="/images/CL006.jpg" width="650"/></p>
 <h2>Week8</h2>
-<p>練習實習任務三&nbsp; :</p>
+<p>練習實習任務三  :</p>
 <p><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm</a></p>
 <p></p>
 <h2>Week9</h2>
 <h4><span style="background-color: #ffcc00;">期中考週</span></h4>
-<p>1.學員期中報告影片錄製:<br><br>影片內容必須清楚呈現各學員從開學至第八週期間, 與課程內容相關的各項任務執行所完成內容.<br><br>2.影片標題與說明<br><br>影片錄製完成後, 上傳至個人的 Youtube 網站, 影片標題註記「國立虎尾科技大學機械設計工程系期中報告」並加上課程名稱以及學員學號. 影片說明欄位必須標示與影片內容有關的個人倉儲、網站以及其他相關網際連結.<br><br>3.學員填寫自評表單<br><br>上課鐘聲響後 25 - 30 分鐘內, 各學員將在即時網際試算表上填寫期中自評成績.<br><br>4.個人期中報告影片嵌入網頁<br><br>各學員以期中報告作為 H1 頁面標題, 將個人期中報告影片, 依照學號順序, 嵌入分組網站(or 個人網站) 頁面中<br><br>5.學員口頭期中報告</p>
-<p>各學員依據上述所完成的各項任務內容,&nbsp; 按照學號順序, 進行 2-3 分鐘的口頭報告.</p>
+<p>1.學員期中報告影片錄製:<br/><br/>影片內容必須清楚呈現各學員從開學至第八週期間, 與課程內容相關的各項任務執行所完成內容.<br/><br/>2.影片標題與說明<br/><br/>影片錄製完成後, 上傳至個人的 Youtube 網站, 影片標題註記「國立虎尾科技大學機械設計工程系期中報告」並加上課程名稱以及學員學號. 影片說明欄位必須標示與影片內容有關的個人倉儲、網站以及其他相關網際連結.<br/><br/>3.學員填寫自評表單<br/><br/>上課鐘聲響後 25 - 30 分鐘內, 各學員將在即時網際試算表上填寫期中自評成績.<br/><br/>4.個人期中報告影片嵌入網頁<br/><br/>各學員以期中報告作為 H1 頁面標題, 將個人期中報告影片, 依照學號順序, 嵌入分組網站(or 個人網站) 頁面中<br/><br/>5.學員口頭期中報告</p>
+<p>各學員依據上述所完成的各項任務內容,  按照學號順序, 進行 2-3 分鐘的口頭報告.</p>
 <h1>Onshape</h1>
 <h2>Process</h2>
 <h4>零件圖:</h4>
-<p><a href="https://cad.onshape.com/documents/2bd57049b40f6d2589f91c94/w/0ebd76aff3d6cec40ccadbe1/e/4b59e4626efe016dfc4bcef4">桌台<img caption="false" height="600" src="/images/桌台.PNG" width="976"></a></p>
-<p><a href="https://cad.onshape.com/documents/068a25c7b8105f40a176bed1/w/08e26cdadb9b517797255aca/e/757e66132daad5ca488204fd">球員<img caption="false" height="600" src="/images/球員.PNG" width="1040"></a></p>
-<p><a href="https://cad.onshape.com/documents/0f5d6d3a113b2dba83d81422/w/b3399fd6deed62a6df2673b9/e/f3fd1765b858210fba7630d1">桿子<img alt="" height="600" src="/images/桿子.PNG" width="1059"></a></p>
-<p><a href="https://cad.onshape.com/documents/61105b891803f30757e61ed7/w/3cb66b9e00b0645c9b9649c4/e/dbf5ebf7578a15621a6ed962">固定環<img alt="" height="600" src="/images/固定環.PNG" width="831"></a></p>
+<p><a href="https://cad.onshape.com/documents/2bd57049b40f6d2589f91c94/w/0ebd76aff3d6cec40ccadbe1/e/4b59e4626efe016dfc4bcef4">桌台<img caption="false" height="600" src="/images/桌台.PNG" width="976"/></a></p>
+<p><a href="https://cad.onshape.com/documents/068a25c7b8105f40a176bed1/w/08e26cdadb9b517797255aca/e/757e66132daad5ca488204fd">球員<img caption="false" height="600" src="/images/球員.PNG" width="1040"/></a></p>
+<p><a href="https://cad.onshape.com/documents/0f5d6d3a113b2dba83d81422/w/b3399fd6deed62a6df2673b9/e/f3fd1765b858210fba7630d1">桿子<img alt="" height="600" src="/images/桿子.PNG" width="1059"/></a></p>
+<p><a href="https://cad.onshape.com/documents/61105b891803f30757e61ed7/w/3cb66b9e00b0645c9b9649c4/e/dbf5ebf7578a15621a6ed962">固定環<img alt="" height="600" src="/images/固定環.PNG" width="831"/></a></p>
 <p></p>
 <p></p>
 <h2>Combination</h2>
-<p><img alt="" height="600" src="/images/2019-04-18_18-26-31.gif" width="784"></p>
-<p><a href="https://cad.onshape.com/documents/49a2387b1bdd3708552395e5/w/93fe661c01a36de9ed92f9ef/e/6380f98f6608719b34f2da9f">手足球完整版</a><img alt="" height="600" src="/images/手足球.PNG" width="1017"></p>
-<p>為了模擬方便進行而做更改(<a href="https://cad.onshape.com/documents/5e67709251dda19377d13635/w/4a1dcf93720e7ef7b454fd52/e/dd67ea85b8f1bee85a84b944">簡易版手足球</a>)<img alt="" height="600" src="/images/簡易版手足球.PNG" width="909"></p>
+<p><img alt="" height="600" src="/images/2019-04-18_18-26-31.gif" width="784"/></p>
+<p><a href="https://cad.onshape.com/documents/49a2387b1bdd3708552395e5/w/93fe661c01a36de9ed92f9ef/e/6380f98f6608719b34f2da9f">手足球完整版</a><img alt="" height="600" src="/images/手足球.PNG" width="1017"/></p>
+<p>為了模擬方便進行而做更改(<a href="https://cad.onshape.com/documents/5e67709251dda19377d13635/w/4a1dcf93720e7ef7b454fd52/e/dd67ea85b8f1bee85a84b944">簡易版手足球</a>)<img alt="" height="600" src="/images/簡易版手足球.PNG" width="909"/></p>
 <h1>V-rep</h1>
 <h2><strong>BubbleRob Tutorial.</strong></h2>
-<p style="padding-left: 30px;">BubbleRob_Tutorial：<a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm</a>&nbsp;</p>
-<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong>V-rep_bubblerob_tutorial_02<br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/MjW68YgSjSY"></iframe></strong></p>
-<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong>V-rep_bubblerob_tutorial_03<br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/99B6v7jKwEg"></iframe><br></strong></p>
+<p style="padding-left: 30px;">BubbleRob_Tutorial：<a href="http://www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm">www.coppeliarobotics.com/helpFiles/en/bubbleRobTutorial.htm</a> </p>
+<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong>V-rep_bubblerob_tutorial_02<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/MjW68YgSjSY" width="500"></iframe></strong></p>
+<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong>V-rep_bubblerob_tutorial_03<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/99B6v7jKwEg" width="500"></iframe><br/></strong></p>
 <p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong>V-rep_bubblerob_tutorial_04</strong></p>
-<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong><iframe width="560" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/sNRiHZOTNcE"></iframe></strong>最末三段作業出現問題。BubbleRob 無法利用感測器的回傳直做運動條件改變</p>
-<p style="padding-left: 30px;"><strong>40423217_V-rep_BubbleRob_Tutorial_V3<br><iframe width="500" height="314" allowfullscreen="allowfullscreen" src="//www.youtube.com/embed/flFbstm-oJE"></iframe><br></strong></p>
-<p style="padding-left: 30px;"><img alt="" height="272" src="/images/chrome_2019-03-29_08-05-06.png" width="500"><br>出問題段落位置，問題解決中</p>
-<p style="padding-left: 30px;"><img alt="" height="271" src="/images/cmd_2dvSHjQXm5.png" width="500"></p>
+<p class="title style-scope ytd-video-primary-info-renderer" style="padding-left: 30px;"><strong><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/sNRiHZOTNcE" width="560"></iframe></strong>最末三段作業出現問題。BubbleRob 無法利用感測器的回傳直做運動條件改變</p>
+<p style="padding-left: 30px;"><strong>40423217_V-rep_BubbleRob_Tutorial_V3<br/><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/flFbstm-oJE" width="500"></iframe><br/></strong></p>
+<p style="padding-left: 30px;"><img alt="" height="272" src="/images/chrome_2019-03-29_08-05-06.png" width="500"/><br/>出問題段落位置，問題解決中</p>
+<p style="padding-left: 30px;"><img alt="" height="271" src="/images/cmd_2dvSHjQXm5.png" width="500"/></p>
 <h2><strong>Football_Table</strong></h2>
-<p><img alt="" height="600" src="/images/nr3ejMOm8X.gif" width="1188"></p>
+<p><img alt="" height="600" src="/images/nr3ejMOm8X.gif" width="1188"/></p>
 <h1>Experience</h1>
 <h2>40623202</h2>
 <table border="2" style="width: 531px; border-color: #000000;"><caption></caption>
@@ -376,7 +376,7 @@ IdentitiesOnly yes</pre>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/02/22</td>
 <td style="width: 93px; text-align: center; height: 49px;">Week 1</td>
-<td style="width: 345px; height: 49px;">第一週我們學了如何使用亂數分組程式，也說明了本學期的評分方式與取分項目&nbsp;。</td>
+<td style="width: 345px; height: 49px;">第一週我們學了如何使用亂數分組程式，也說明了本學期的評分方式與取分項目 。</td>
 </tr>
 <tr style="height: 49px;">
 <td style="width: 91px; text-align: center; height: 49px;">2019/03/01</td>
@@ -415,7 +415,7 @@ IdentitiesOnly yes</pre>
 <td style="width: 91px; text-align: center; height: 22.8722px;">2019/04/12</td>
 <td style="width: 93px; text-align: center; height: 22.8722px;"><span>Week 8</span></td>
 <td style="width: 345px; height: 22.8722px;"><span>本週練習</span><a href="http://www.coppeliarobotics.com/helpFiles/en/buildingAModelTutorial.htm">實習任務三</a><span>，</span>
-<p>除了<span>&nbsp;</span>繪製零組件外, 還必須考慮模擬過程的實用性，必須要先掌握各零組件基本的運動與動態特性，可以學習如何建立適用於<span>&nbsp;</span><a href="http://www.coppeliarobotics.com/">V-rep</a><span>&nbsp;</span>的零件模型.</p>
+<p>除了<span> </span>繪製零組件外, 還必須考慮模擬過程的實用性，必須要先掌握各零組件基本的運動與動態特性，可以學習如何建立適用於<span> </span><a href="http://www.coppeliarobotics.com/">V-rep</a><span> </span>的零件模型.</p>
 </td>
 </tr>
 <tr style="height: 49px;">
@@ -430,7 +430,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47.8021px;">
 <td style="width: 91px; text-align: center; height: 47.8021px;">Date</td>
-<td style="width: 91px; text-align: center; height: 47.8021px;"><span>Week&nbsp;</span></td>
+<td style="width: 91px; text-align: center; height: 47.8021px;"><span>Week </span></td>
 <td style="width: 347px; text-align: center; height: 47.8021px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 47px;">
@@ -544,7 +544,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47.0729px;">
 <td style="width: 92.2222px; text-align: center; height: 47.0729px;"><span>Date</span></td>
-<td style="width: 87.7778px; text-align: center; height: 47.0729px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.7778px; text-align: center; height: 47.0729px;"><span>Week </span></td>
 <td style="width: 350px; text-align: center; height: 47.0729px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -610,7 +610,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -671,7 +671,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49.5037px;">
@@ -733,7 +733,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -794,7 +794,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -853,7 +853,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -908,7 +908,7 @@ IdentitiesOnly yes</pre>
 <tbody>
 <tr style="height: 47px;">
 <td style="width: 92px; text-align: center; height: 47px;"><span>Date</span></td>
-<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week&nbsp;</span></td>
+<td style="width: 87.9861px; text-align: center; height: 47px;"><span>Week </span></td>
 <td style="width: 349.014px; text-align: center; height: 47px;"><span>Experience</span></td>
 </tr>
 <tr style="height: 49px;">
@@ -959,9 +959,9 @@ IdentitiesOnly yes</pre>
 </tbody>
 </table>
 <h1>Attend</h1>
-<p><span>on time :&nbsp;●</span></p>
+<p><span>on time : ●</span></p>
 <p><span>late : △</span></p>
-<p><span lang="en" tabindex="0">Leave:&nbsp; ╳<br><br><span>National holiday:★</span></span></p>
+<p><span lang="en" tabindex="0">Leave:  ╳<br/><br/><span>National holiday:★</span></span></p>
 <table style="width: 600px;">
 <tbody>
 <tr>
@@ -1111,12 +1111,12 @@ IdentitiesOnly yes</pre>
 </tbody>
 </table>
 <h1>Q＆A</h1>
-<h4><br>全部頁面會因無法正確解讀而誤刪</h4>
-<p><br>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
+<h4><br/>全部頁面會因無法正確解讀而誤刪</h4>
+<p><br/>在特定情況下, 系統會誤刪 config/content.htm 檔案, 目前在單頁或全部頁面編輯存檔之前, 或將上一版本的 content.htm 存入 content_back.htm, 若 content.htm 內容被程式誤刪, 可以利用備份檔案複製回原始內容後, 再進行後續處理.</p>
 <h4>頁面標題不支援特殊符號</h4>
-<p><br>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
+<p><br/>各頁面標題目前不支援特殊符號, 例如: "/", "?" 等, 若已經發生程式無法解讀頁面的情況, 只能從編輯 config/content.htm 下手, 若系統位於遠端, 則後續必須要再設法提供一個額外的編輯 config/content.htm 檔案的網際連結功能.</p>
 <h4>Video 引用不支援內部引用</h4>
-<p><br>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
+<p><br/>tinymce 中插入 video 的小視窗, 要移除引用的圖像與連結, 因為一般建議不要在內容中存入 .mp4 的影片資料, 而只接受引入影片 URL 連結.</p>
 <h1>期中報告</h1>
 <h4>40623202</h4>
 <h4>40623209</h4>
