@@ -78,43 +78,11 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='head 1.html'>head 1</a><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7-1.html'>Week7-1</a><li><a href='Week8-1.html'>Week8-1</a><li><a href='Week7-2.html'>Week7-2</a><li><a href='Week8-2.html'>Week8-2</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">Course << <a href='Course.html'>Previous</a> <a href='week2.html'>Next</a> >> week2<br /><h1>week1</h1>
-<h4>亂數分組程式</h4>
-<p><span>本程式主要功能是能夠快速的進行組員的隨機快速分配，讓程式一開始先載入固定的檔案(此範例就是txt檔)，內容是所有組員的名字，再讓使用者輸入組別數、組員人數，交由程式去分配，最後再讓程式將結果輸出成另一份的txt檔</span></p>
-<h4><span style="background-color: #ffcc00;">參考程式架構</span></h4>
-<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
-filename = 'cdbw3_student_list.txt'
-# 每組人數
-num_in_one_group = 11
-# 組序由 1 開始
-group = 1
-# 各班分組後所得數列
-c2019 = []
-with open(filename) as f:
-    # 讀進全部檔案, 轉進數列, 並同時將各行的 \n 去除
-    read_data = f.read().splitlines() 
-print("共有 " + str(len(read_data)) + " 位學員")
-# 利用 shuffle 將數列隨機弄亂
-random.shuffle(read_data)
-for i in range(len(read_data)):
-    # 利用整數相除的餘數進行分組
-    if i%num_in_one_group == 0:
-        # 列出分隔符號
-        print("-"*20)
-        print("group " + str(group) +":")
-        # 在分組區隔時重置各組學員數列
-        group_list = []
-        print()
-        # 同時列出與分隔標註對應 i 的數列內容
-        print(read_data[i])
-        group_list.append(read_data[i])
-        group = group + 1
-    else:
-        # 逐一列出同組的其他學員
-        print(read_data[i])
-        group_list.append(read_data[i])
-    if i%num_in_one_group == 0:
-        c2019.append(group_list)
-# c2019 為該班分組後所得分組數列
-print(c2019)</pre>
-<br />Course << <a href='Course.html'>Previous</a> <a href='week2.html'>Next</a> >> week2</div></section></div></body></html>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='head 1.html'>head 1</a><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7-1.html'>Week7-1</a><li><a href='Week8-1.html'>Week8-1</a><li><a href='Week7-2.html'>Week7-2</a><li><a href='Week8-2.html'>Week8-2</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">Onshape << <a href='Onshape.html'>Previous</a> <a href='Combination.html'>Next</a> >> Combination<br /><h1>Process</h1>
+<p>零件圖:</p>
+<p><a href="https://cad.onshape.com/documents/2bd57049b40f6d2589f91c94/w/0ebd76aff3d6cec40ccadbe1/e/4b59e4626efe016dfc4bcef4">桌台<img caption="false" height="600" src="./../images/桌台.PNG" width="976"/></a></p>
+<p><a href="https://cad.onshape.com/documents/068a25c7b8105f40a176bed1/w/08e26cdadb9b517797255aca/e/757e66132daad5ca488204fd">球員<img caption="false" height="600" src="./../images/球員.PNG" width="1040"/></a></p>
+<p><a href="https://cad.onshape.com/documents/0f5d6d3a113b2dba83d81422/w/b3399fd6deed62a6df2673b9/e/f3fd1765b858210fba7630d1">桿子<img alt="" height="600" src="./../images/桿子.PNG" width="1059"/></a></p>
+<p><a href="https://cad.onshape.com/documents/61105b891803f30757e61ed7/w/3cb66b9e00b0645c9b9649c4/e/dbf5ebf7578a15621a6ed962">固定環<img alt="" height="600" src="./../images/固定環.PNG" width="831"/></a></p>
+<p></p>
+<p></p><br />Onshape << <a href='Onshape.html'>Previous</a> <a href='Combination.html'>Next</a> >> Combination</div></section></div></body></html>
