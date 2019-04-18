@@ -21,14 +21,37 @@
 <v t="leo.20180902120523.6" a="E"><vh>body</vh>
 <v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9" a="E"><vh>封面投影片</vh>
+<v t="leo.20180902120523.9"><vh>封面投影片</vh>
 <v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
 </v>
-<v t="leo.20180902120523.11" a="E"><vh>快捷鍵</vh>
-<v t="leo.20180902120523.12"><vh>w1</vh></v>
-<v t="leo.20190418183421.1"><vh>投影片快捷鍵</vh></v>
+<v t="leo.20190419014519.1" a="E"><vh>week1</vh>
+<v t="leo.20190419014519.2"><vh>w1</vh></v>
 </v>
-<v t="leo.20180902120523.13" a="E"><vh>各式內容引用範例</vh>
+<v t="leo.20190419014518.1"><vh>week2</vh>
+<v t="leo.20190419014518.2"><vh>w2</vh></v>
+</v>
+<v t="leo.20190419014516.1" a="E"><vh>week3</vh>
+<v t="leo.20190419014516.2"><vh>w3</vh></v>
+</v>
+<v t="leo.20190419014515.1" a="E"><vh>week4</vh>
+<v t="leo.20190419014515.2"><vh>w4</vh></v>
+</v>
+<v t="leo.20190419014513.1" a="E"><vh>week5</vh>
+<v t="leo.20190419014513.2"><vh>w5</vh></v>
+</v>
+<v t="leo.20190419014511.1" a="E"><vh>week6</vh>
+<v t="leo.20190419014511.2"><vh>w6</vh></v>
+</v>
+<v t="leo.20190419014510.1" a="E"><vh>week7</vh>
+<v t="leo.20190419014510.2"><vh>w7</vh></v>
+</v>
+<v t="leo.20190419014508.1" a="E"><vh>week8</vh>
+<v t="leo.20190419014508.2"><vh>w8</vh></v>
+</v>
+<v t="leo.20190419014505.1" a="E"><vh>week9</vh>
+<v t="leo.20190419014505.2"><vh>w9</vh></v>
+</v>
+<v t="leo.20180902120523.13"><vh>各式內容引用範例</vh>
 <v t="leo.20180902120523.14" a="E"><vh>導入數學符號與方程式</vh>
 <v t="leo.20180902120523.15"><vh>LaTeX 格式方程式</vh></v>
 </v>
@@ -51,29 +74,15 @@
 <t tx="leo.20180902120523.1"></t>
 <t tx="leo.20180902120523.10">## 協同產品設計
 
-### KMOLab
+### 手足球模擬-bg2
 
 &lt;small&gt;
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [第二組](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2)
 &lt;/small&gt;
 
-[CMSimfly 網誌](./../blog/index.html)
-
-
-</t>
-<t tx="leo.20180902120523.11">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
-</t>
-<t tx="leo.20180902120523.12"># W1
-
-* 利用箭頭上下前後換頁。
-
+&lt;small&gt;
+[BLOG](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/)
+&lt;/small&gt;
 
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
@@ -323,14 +332,143 @@ QLineEdit#editorLabel {
 }</t>
 <t tx="leo.20180902120538.3">horizontal: body pane to the left
 vertical: body pane on the botton</t>
-<t tx="leo.20190418183421.1"># 投影片快捷鍵
+<t tx="leo.20190419014505.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+
+						
+</t>
+<t tx="leo.20190419014505.2"># Week9
+
+* 期中考週，各組需完成手足球模擬的任務。
+
+</t>
+<t tx="leo.20190419014508.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014508.2"># Week8
+
+* 在更新Blog時無法正常地更改內容，
+原因:在w5的隨身系統裡少了pelican所以無法正確的更新。
+
+</t>
+<t tx="leo.20190419014510.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014510.2"># Week7
+
+* 清明節連假
+
+
+</t>
+<t tx="leo.20190419014511.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014511.2"># Week6
+
+* 閱讀BubbleRob Tutorial，練習使用v-rep模擬。
+
+</t>
+<t tx="leo.20190419014513.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014513.2"># Week5
+
+* 在使用.ssh時因為在home底下沒有設置個人rsa檔，
+所以在推送時會發生衝突,只有一開始推成功的人才有權限，
+而在.ssh下的config裡也要設定身分這樣才不會發生衝突。
+
+
+
+</t>
+<t tx="leo.20190419014515.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014515.2"># Week4
+
+* 設定在.ssh時所需要用的Public Keys， 這樣可以避免在別人面前推送時打帳密被別人看到， 利用Public Keys在ungit上快速推送。
+
+
+
+</t>
+<t tx="leo.20190419014516.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014516.2"># Week3
+
+* 亂數分組，開始分組任務-手足球模擬。
+* 講解ungit的使用方法。
+
+
+</t>
+<t tx="leo.20190419014518.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014518.2"># Week2
+
+* 二二八連假
+
+
+</t>
+<t tx="leo.20190419014519.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419014519.2"># Week1
+
+* 說明本學期上課內容及評分方式。
+* 學習如何建立可攜程式。
+
 
 </t>
 </tnodes>
