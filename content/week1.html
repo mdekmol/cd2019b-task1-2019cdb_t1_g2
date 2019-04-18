@@ -78,9 +78,19 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7-1.html'>Week7-1</a><li><a href='Week8-1.html'>Week8-1</a><li><a href='Week7-2.html'>Week7-2</a><li><a href='Week8-2.html'>Week8-2</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">Course << <a href='Course.html'>Previous</a> <a href='week2.html'>Next</a> >> week2<br /><h1>week1</h1>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week 6.html'>Week 6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><ul><li><a href='BubbleRob Tutorial..html'>BubbleRob Tutorial.</a><li><a href='Football_Table.html'>Football_Table</a></li></ul><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section><div id="tipue_search_content">Course << <a href='Course.html'>Previous</a> <a href='week2.html'>Next</a> >> week2<br /><h1>week1</h1>
 <h4>亂數分組程式</h4>
 <p><span>本程式主要功能是能夠快速的進行組員的隨機快速分配，讓程式一開始先載入固定的檔案(此範例就是txt檔)，內容是所有組員的名字，再讓使用者輸入組別數、組員人數，交由程式去分配，最後再讓程式將結果輸出成另一份的txt檔</span></p>
+<p><span>其過程為:</span></p>
+<ol>
+<li>讀進學生資料, 將各學生學號轉入數列</li>
+<li>利用亂數模組中的 shuffle 函式, 隨機弄亂學號數列</li>
+<li>利用 for 迴圈, 從學號數列中一一取出, 準備進行分組</li>
+<li>在迴圈中利用整數相除後取得餘數的規律, 依照每組幾人的規劃進行分組</li>
+<li>在分組過程, 再設法利用數列的 append, 將各組學員學號納為分組數列</li>
+<li>最後將各組數列再放入選課班級數列中備用</li>
+<li>其一組最多可以20~30人，無法再超過</li>
+</ol>
 <h4><span style="background-color: #ffcc00;">參考程式架構</span></h4>
 <pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">import random
 filename = 'cdbw3_student_list.txt'

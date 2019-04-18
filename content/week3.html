@@ -78,7 +78,57 @@ $(document).ready(doSearch);
 
 </ul>
 </confmenu></header>
-<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7-1.html'>Week7-1</a><li><a href='Week8-1.html'>Week8-1</a><li><a href='Week7-2.html'>Week7-2</a><li><a href='Week8-2.html'>Week8-2</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a></li></ul></nav><section><div id="tipue_search_content">week2 << <a href='week2.html'>Previous</a> <a href='Week4.html'>Next</a> >> Week4<br /><h1>week3</h1>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='week3.html'>week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week 6.html'>Week 6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><ul><li><a href='BubbleRob Tutorial..html'>BubbleRob Tutorial.</a><li><a href='Football_Table.html'>Football_Table</a></li></ul><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attend.html'>Attend</a><li><a href='Q＆A.html'>Q＆A</a><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section><div id="tipue_search_content">week2 << <a href='week2.html'>Previous</a> <a href='Week4.html'>Next</a> >> Week4<br /><h1>week3</h1>
+<h4>配置ungit</h4>
 <p>根據 <a href="https://2019wcm.blogspot.com/2019/03/ungit.html">https://2019wcm.blogspot.com/2019/03/ungit<g class="gr_ gr_265 gr-alert gr_gramm gr_inline_cards gr_run_anim Style replaceWithoutSep" data-gr-id="265" id="265">.html</g></a> 的設定, 完成 <g class="gr_ gr_121 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="121" id="121">ungit</g> 配置.</p>
-<p>ssh 連結 <g class="gr_ gr_122 gr-alert gr_spell gr_inline_cards gr_disable_anim_appear ContextualSpelling ins-del multiReplace" data-gr-id="122" id="122">github</g> 倉儲.</p>
+<p><span>教學影片：</span><span> </span><a href="https://www.youtube.com/watch?v=lB-spECfhr8">https://www.youtube.com/watch?v=lB-spECfhr8</a><span> </span></p>
+<p>1.<span>下載ungit與node.js程式碼，然後將nodejs放入kmol_2019的data中。</span></p>
+<p><span><img caption="false" height="631" src="./../images/1555593357495.jpg" width="700"/></span></p>
+<p><span>2.修改 ungit 的內容</span></p>
+<p>(1)路徑如下:</p>
+<p><img caption="false" height="588" src="./../images/1555593574787.jpg" width="650"/></p>
+<p>(2)修改內容:</p>
+<pre class="brush:py;auto-links:false;toolbar:false" contenteditable="false">#!/bin/sh<span></span>
+basedir=$(dirname "$(echo "$0" | sed -e 's,\\,/,g')")<span></span>
+<span></span>
+# Yen 必須關掉下列設定, 讓 ungit 可以導引 git 讀取 y:\home 下的 .gitconfig 設定<span></span>
+#case `uname` in<span></span>
+    #*CYGWIN*) basedir=`cygpath -w "$basedir"`;;<span></span>
+#esac<span></span>
+<span></span>
+if [ -x "$basedir/node" ]; then<span></span>
+  "$basedir/node"  "$basedir/node_modules/ungit/bin/ungit" "$@"<span></span>
+  ret=$?<span></span>
+else <span></span>
+  node  "$basedir/node_modules/ungit/bin/ungit" "$@"<span></span>
+  ret=$?<span></span>
+fi<span></span>
+exit $ret<span></span></pre>
+<p>(3)修改後的內容:</p>
+<p><img alt="" height="737" src="./../images/1555593625426.jpg" width="570"/></p>
+<p>3.<span>在 start.bat 中加入 </span><span>set USERPROFILE=%Disk%:\home</span></p>
+<p><span><img caption="false" height="394" src="./../images/modify start w4.JPG" width="950"/></span></p>
+<h4>git<span> </span><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17"><g class="gr_ gr_17 gr-alert gr_spell gr_inline_cards gr_run_anim ContextualSpelling ins-del multiReplace" data-gr-id="17" id="17">http</g></g> 與 ssh</h4>
+<p>利用 ssh 對 git 改版, 必須使用  home/.ssh/config 設定, 才能透過 proxy 伺服器進行連線, 由於在 IPv6 環境下, 必須要透過 proxy 才能對 Git 連線, 因此若無 config, 無法對遠端改版</p>
+<pre class="brush:js;auto-links:false;toolbar:false" contenteditable="false">ProxyCommand y:/PortableGit/mingw64/bin/connect.exe -H 140.130.17.53:3128 %h %p
+
+Host github.com
+User git
+Port 22
+Hostname github.com
+
+IdentityFile "y:\home\.ssh\id_rsa"
+
+TCPKeepAlive yes
+IdentitiesOnly yes
+
+Host ssh.github.com
+User git
+Port 443
+Hostname ssh.github.com
+
+IdentityFile "y:\home\.ssh\id_rsa"
+
+TCPKeepAlive yes
+IdentitiesOnly yes</pre>
 <br />week2 << <a href='week2.html'>Previous</a> <a href='Week4.html'>Next</a> >> Week4</div></section></div></body></html>
