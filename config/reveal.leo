@@ -21,8 +21,8 @@
 <v t="leo.20180902120523.6" a="E"><vh>body</vh>
 <v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面投影片</vh>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
+<v t="leo.20190419131456.1" a="E"><vh>封面投影片</vh>
+<v t="leo.20190419131456.2"><vh>封面投影片內容</vh></v>
 </v>
 <v t="leo.20190419014519.1" a="E"><vh>week1</vh>
 <v t="leo.20190419014519.2"><vh>w1</vh></v>
@@ -30,13 +30,13 @@
 <v t="leo.20190419014518.1"><vh>week2</vh>
 <v t="leo.20190419014518.2"><vh>w2</vh></v>
 </v>
-<v t="leo.20190419014516.1" a="E"><vh>week3</vh>
+<v t="leo.20190419014516.1"><vh>week3</vh>
 <v t="leo.20190419014516.2"><vh>w3</vh></v>
 </v>
-<v t="leo.20190419014515.1" a="E"><vh>week4</vh>
+<v t="leo.20190419014515.1"><vh>week4</vh>
 <v t="leo.20190419014515.2"><vh>w4</vh></v>
 </v>
-<v t="leo.20190419014513.1" a="E"><vh>week5</vh>
+<v t="leo.20190419014513.1"><vh>week5</vh>
 <v t="leo.20190419014513.2"><vh>w5</vh></v>
 </v>
 <v t="leo.20190419014511.1" a="E"><vh>week6</vh>
@@ -72,19 +72,6 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 協同產品設計
-
-### 手足球模擬-bg2
-
-&lt;small&gt;
-Created by [第二組](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2)
-&lt;/small&gt;
-
-&lt;small&gt;
-[BLOG](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/)
-&lt;/small&gt;
-
-</t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
 &lt;/section&gt;
@@ -246,15 +233,6 @@ CMSimfly 網際內容管理
 @others
 &lt;/div&gt;
 
-</t>
-<t tx="leo.20180902120523.9">&lt;section data-markdown&gt;
-    &lt;script type="text/template"&gt;
-@others
-    &lt;/script&gt;
-&lt;/section&gt;
-
-
-						
 </t>
 <t tx="leo.20180902120538.1"></t>
 <t tx="leo.20180902120538.2">QTreeWidget {
@@ -469,6 +447,28 @@ vertical: body pane on the botton</t>
 * 說明本學期上課內容及評分方式。
 * 學習如何建立可攜程式。
 
+
+</t>
+<t tx="leo.20190419131456.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419131456.2">## 協同產品設計
+
+### 手足球模擬-bg2
+
+&lt;small&gt;
+Created by [第二組](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2)
+&lt;/small&gt;
+
+&lt;small&gt;
+[BLOG](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/)
+&lt;/small&gt;
 
 </t>
 </tnodes>
