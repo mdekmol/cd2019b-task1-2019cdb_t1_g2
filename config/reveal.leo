@@ -21,8 +21,11 @@
 <v t="leo.20180902120523.6" a="E"><vh>body</vh>
 <v t="leo.20180902120523.7" a="E"><vh>reveal div</vh>
 <v t="leo.20180902120523.8" a="E"><vh>slides div</vh>
-<v t="leo.20180902120523.9"><vh>封面投影片</vh>
-<v t="leo.20180902120523.10"><vh>封面投影片內容</vh></v>
+<v t="leo.20190419131456.1"><vh>封面投影片</vh>
+<v t="leo.20190419131456.2"><vh>封面投影片內容</vh></v>
+</v>
+<v t="leo.20180902120523.9" a="E"><vh>工作分配</vh>
+<v t="leo.20180902120523.10"><vh>assigement</vh></v>
 </v>
 <v t="leo.20190419014519.1" a="E"><vh>week1</vh>
 <v t="leo.20190419014519.2"><vh>w1</vh></v>
@@ -30,13 +33,13 @@
 <v t="leo.20190419014518.1"><vh>week2</vh>
 <v t="leo.20190419014518.2"><vh>w2</vh></v>
 </v>
-<v t="leo.20190419014516.1" a="E"><vh>week3</vh>
+<v t="leo.20190419014516.1"><vh>week3</vh>
 <v t="leo.20190419014516.2"><vh>w3</vh></v>
 </v>
-<v t="leo.20190419014515.1" a="E"><vh>week4</vh>
+<v t="leo.20190419014515.1"><vh>week4</vh>
 <v t="leo.20190419014515.2"><vh>w4</vh></v>
 </v>
-<v t="leo.20190419014513.1" a="E"><vh>week5</vh>
+<v t="leo.20190419014513.1"><vh>week5</vh>
 <v t="leo.20190419014513.2"><vh>w5</vh></v>
 </v>
 <v t="leo.20190419014511.1" a="E"><vh>week6</vh>
@@ -72,18 +75,31 @@
 </vnodes>
 <tnodes>
 <t tx="leo.20180902120523.1"></t>
-<t tx="leo.20180902120523.10">## 協同產品設計
+<t tx="leo.20180902120523.10"># 工作分配
 
-### 手足球模擬-bg2
+---
+40623249 李秉樺	V-rep模擬
 
-&lt;small&gt;
-Created by [第二組](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2)
-&lt;/small&gt;
+40623202 吳姍蓉	管理倉儲、網站、BLOG
 
-&lt;small&gt;
-[BLOG](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/)
-&lt;/small&gt;
+40623209 李芳瑜	管理倉儲、網站、BLOG
 
+40623214 吳家文	V-rep模擬
+
+40623215 吳柏毅	Onshape
+
+40623220 蔡崇廷	V-rep模擬
+
+40623236 黃子峰	V-rep模擬
+
+40623247 廖峻祥	管理倉儲、網站、BLOG
+
+40623250 湯峻傑	Onshape
+
+40623251 鄧靖宣	V-rep模擬
+
+40423217 阮奕誠	管理倉儲、網站、BLOG
+---
 </t>
 <t tx="leo.20180902120523.13">&lt;section&gt;
 @others
@@ -469,6 +485,28 @@ vertical: body pane on the botton</t>
 * 說明本學期上課內容及評分方式。
 * 學習如何建立可攜程式。
 
+
+</t>
+<t tx="leo.20190419131456.1">&lt;section data-markdown&gt;
+    &lt;script type="text/template"&gt;
+@others
+    &lt;/script&gt;
+&lt;/section&gt;
+
+
+						
+</t>
+<t tx="leo.20190419131456.2">## 協同產品設計
+
+### 手足球模擬-bg2
+
+&lt;small&gt;
+Created by [第二組](https://github.com/mdekmol/cd2019b-task1-2019cdb_t1_g2)
+&lt;/small&gt;
+
+&lt;small&gt;
+[BLOG](https://mdekmol.github.io/cd2019b-task1-2019cdb_t1_g2/blog/)
+&lt;/small&gt;
 
 </t>
 </tnodes>
