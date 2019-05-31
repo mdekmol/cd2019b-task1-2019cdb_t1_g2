@@ -1,0 +1,44 @@
+function speedChange_callback(ui,id,newVal)
+    speed=minMaxSpeed[1]+(minMaxSpeed[2]-minMaxSpeed[1])*newVal/100
+end
+
+function sysCall_init()
+    -- This is executed exactly once, the first time this script is executed
+    bubbleRobBase=sim.getObjectAssociatedWithScript(sim.handle_self) -- this is bubbleRob's handle
+    forward_leftMotor=sim.getObjectHandle("BubbleRob_R2_forward_leftMotor") -- Handle of the left motor
+    forward_rightMotor=sim.getObjectHandle("BubbleRob_R2_forward_rightMotor") -- Handle of the right motor
+    noseSensorF=sim.getObjectHandle("BubbleRob_R2_forward_sensingNose") -- Handle of the proximity sensor
+    noseSensorL=sim.getObjectHandle("BubbleRob_R2_left_sensingNose")
+    noseSensorR=sim.getObjectHandle("BubbleRob_R2_right_sensingNose")
+    minMaxSpeed={50*math.pi/180,300*math.pi/180} -- Min and max speeds for each motor
+    backUntilTime=-1 -- Tells whether bubbleRob is in forward or backward mode
+    -- Create the custom UI:
+        xml = '<ui title="'..sim.getObjectName(bubbleRobBase)..' speed" closeable="false" resizeable="false" activate="false">'..[[
+        <hslider minimum="0" maximum="100" onchange="speedChange_callback" id="1"/>
+        <label text="" style="* {margin-left: 300px;}"/>
+        </ui>
+        ]]
+    ui=simUI.create(xml)
+    speed=(minMaxSpeed[1]+minMaxSpeed[2])*0.5
+    simUI.setSliderValue(ui,1,100*(speed-minMaxSpeed[1])/(minMaxSpeed[2]-minMaxSpeed[1]))
+end
+
+function sysCall_actuation()
+    resultF=sim.readProximitySensor(noseSensorF) -- Read the proximity sensor
+    -- If we detected something, we set the backward mode:
+    if (resultF>0) then backUntilTime=sim.getSimulationTime()+1 end 
+
+    if (backUntilTime<sim.getSimulationTime()) then
+        -- When in forward mode, we simply move forward at the desired speed
+        sim.setJointTargetVelocity(forward_leftMotor,-speed)
+        sim.setJointTargetVelocity(forward_rightMotor,-speed)
+    else
+        -- When in backward mode, we simply backup in a curve at reduced speed
+        sim.setJointTargetVelocity(forward_leftMotor,speed/2)
+        sim.setJointTargetVelocity(forward_rightMotor,speed/2)
+    end
+end
+
+function sysCall_cleanup()
+	simUI.destroy(ui)
+end
