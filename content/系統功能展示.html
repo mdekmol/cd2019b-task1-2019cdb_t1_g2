@@ -1,0 +1,462 @@
+<!doctype html>
+<html><head>
+<meta http-equiv="content-type" content="text/html;charset=utf-8">
+<title>CMSimfly</title> <link rel="stylesheet" type="text/css" href="./../static/cmsimply.css">
+<script src="tipuesearch_content.js"></script>
+<script src="./../static/jquery.js"></script>
+<link rel="stylesheet" href="./../static/tipuesearch/css/tipuesearch.css">
+<script src="./../static/tipuesearch/tipuesearch_set.js"></script>
+<script src="./../static/tipuesearch/tipuesearch.min.js"></script>
+
+<script type="text/javascript" src="./../static/syntaxhighlighter/shCore.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJScript.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushJava.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPython.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushSql.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushXml.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushPhp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushLua.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCpp.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCss.js"></script>
+<script type="text/javascript" src="./../static/syntaxhighlighter/shBrushCSharp.js"></script>
+<link type="text/css" rel="stylesheet" href="./../static/syntaxhighlighter/css/shCoreDefault.css"/>
+<script type="text/javascript">SyntaxHighlighter.all();</script>
+
+<!-- for LaTeX equations 暫時不用
+<script src="https://scrum-3.github.io/web/math/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+<script type="text/javascript">
+init_mathjax = function() {
+    if (window.MathJax) {
+        // MathJax loaded
+        MathJax.Hub.Config({
+            tex2jax: {
+                inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                displayMath: [ ['$$','$$'], ["\\[","\\]"] ]
+            },
+            displayAlign: 'left', // Change this to 'center' to center equations.
+            "HTML-CSS": {
+                styles: {'.MathJax_Display': {"margin": 0}}
+            }
+        });
+        MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    }
+}
+init_mathjax();
+</script>
+-->
+<!-- 暫時不用
+<script src="./../static/fengari-web.js"></script>
+<script type="text/javascript" src="./../static/Cango-13v08-min.js"></script>
+<script type="text/javascript" src="./../static/CangoAxes-4v01-min.js"></script>
+<script type="text/javascript" src="./../static/gearUtils-05.js"></script>
+-->
+<!-- for Brython 暫時不用
+<script src="https://scrum-3.github.io/web/brython/brython.js"></script>
+<script src="https://scrum-3.github.io/web/brython/brython_stdlib.js"></script>
+-->
+
+<script type="text/javascript">
+/*shorthand of $(document).ready(function(){};); */
+$(function(){
+    $("ul.topmenu> li:has(ul) > a").append('<div class="arrow-right"></div>');
+    $("ul.topmenu > li ul li:has(ul) > a").append('<div class="arrow-right"></div>');
+});
+function doSearch() {
+     $('#tipue_search_input').tipuesearch({
+        newWindow: true, minimumLength: 2
+     });
+}
+$(document).ready(doSearch);
+</script>
+
+</head><header><h1>協同產品設計實習第二組</h1> <confmenu>
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="sitemap.html">Site Map</a></li>
+<li><a href="./../reveal/index.html">reveal</a></li>
+<li><a href="./../blog/index.html">blog</a></li>
+
+</ul>
+</confmenu></header>
+<div class='container'><nav><ul id='css3menu1' class='topmenu'><div class="tipue_search_group"><input style="width: 6vw;" type="text" name="q" id="tipue_search_input" pattern=".{2,}" title="Press enter key to search" required></div><li><a href='各組期末報告說明.html'>各組期末報告說明</a><li><a href='期末─Claw Machine.html'>期末─Claw Machine</a><li><a href='執行規劃.html'>執行規劃</a><ul><li><a href='手足球系統模擬.html'>手足球系統模擬</a><ul><li><a href='專案成果摘要.html'>專案成果摘要</a><li><a href='相關文獻探討.html'>相關文獻探討</a><li><a href='專案執行成員.html'>專案執行成員</a><li><a href='執行使用套件.html'>執行使用套件</a><li><a href='專案執行過程規劃.html'>專案執行過程規劃</a><li><a href='專案執行內容.html'>專案執行內容</a><li><a href='專案討論.html'>專案討論</a></li></li></ul></ul><li><a href='設計與繪圖.html'>設計與繪圖</a><ul><li><a href='零組件尺寸分析.html'>零組件尺寸分析</a><li><a href='參數設計與繪圖.html'>參數設計與繪圖</a><li><a href='細部設計與BOM.html'>細部設計與BOM</a></li></ul><li><a href='V-rep 動態模擬.html'>V-rep 動態模擬</a><ul><li><a href='送球機構設計與模擬.html'>送球機構設計與模擬</a><li><a href='系統功能展示.html'>系統功能展示</a></li></ul><li><a href='結案報告.html'>結案報告</a><ul><li><a href='專案口頭簡報.html'>專案口頭簡報</a><li><a href='專案報告書.html'>專案報告書</a></li></ul><li><a href='期中專案報告.html'>期中專案報告</a><ul><li><a href='Introduction.html'>Introduction</a><li><a href='Directory Structure.html'>Directory Structure</a><li><a href='Course.html'>Course</a><ul><li><a href='week1.html'>week1</a><li><a href='week2.html'>week2</a><li><a href='Week3.html'>Week3</a><li><a href='Week4.html'>Week4</a><li><a href='Week5.html'>Week5</a><li><a href='Week6.html'>Week6</a><li><a href='Week7.html'>Week7</a><li><a href='Week8.html'>Week8</a><li><a href='Week9.html'>Week9</a></li></ul><li><a href='Onshape.html'>Onshape</a><ul><li><a href='Process.html'>Process</a><li><a href='Combination.html'>Combination</a></li></ul><li><a href='V-rep.html'>V-rep</a><ul><li><a href='BubbleRob Tutorial..html'>BubbleRob Tutorial.</a><li><a href='Football_Table.html'>Football_Table</a></li></ul><li><a href='Experience.html'>Experience</a><ul><li><a href='40623202.html'>40623202</a><li><a href='40623209.html'>40623209</a><li><a href='40623214.html'>40623214</a><li><a href='40623215.html'>40623215</a><li><a href='40623220.html'>40623220</a><li><a href='40623236.html'>40623236</a><li><a href='40623247.html'>40623247</a><li><a href='40623249.html'>40623249</a><li><a href='40623250.html'>40623250</a><li><a href='40623251.html'>40623251</a><li><a href='40423217.html'>40423217</a></li></ul><li><a href='Attendance table.html'>Attendance table</a><li><a href='Q＆A.html'>Q＆A</a><li><a href='期中報告.html'>期中報告</a></li></ul></nav><section><div id="tipue_search_content">送球機構設計與模擬 << <a href='送球機構設計與模擬.html'>Previous</a> <a href='結案報告.html'>Next</a> >> 結案報告<br /><h1>系統功能展示</h1>
+<p><span><iframe allowfullscreen="allowfullscreen" height="315" src="//www.youtube.com/embed/wEtOXdks_ds" width="560"></iframe></span></p>
+<p> 單人足球員模擬</p>
+<p><iframe allowfullscreen="allowfullscreen" height="315" src="//www.youtube.com/embed/WQ13H6bC_LY" width="560"></iframe></p>
+<p>雙人足球員模擬</p>
+<p></p>
+<p><iframe allowfullscreen="allowfullscreen" height="315" src="//www.youtube.com/embed/aAG0wYawJ-I" width="516"></iframe></p>
+<p><a href="https://drive.google.com/open?id=1ue2n1paSlFXw_P7CCmHPP58Cd8LmKv-N">人對人檔案</a></p>
+<p><a href="https://github.com/mdecadp2018/site-40623220/blob/gh-pages/bg2.ttt">人對人v-rep檔案</a></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">-- model in Solvespace 500 mm = 5000 mm in V-rep
+--[[
+Simulation is 10 times of realistic environment
+floor in Solvespace 2.5 m x 2.5 m = 25 m x 25 m in V-rep
+ball is in Solivespace 1g (0.001) = 0.01 kg in V-rep
+hammer is in Solvespace 0.1 kg (100g) = 1kg in V-rep (0.1 for Inertia)
+]]
+local joint_r = {'left_joint1','left_joint3','left_joint5','left_joint7',}
+local joint_b = {'left_joint','left_joint2','left_joint4','left_joint6',}
+local slider_r ={'left_slider1','left_slider3','left_slider5','left_slider7',}
+local slider_b ={'left_slider','left_slider2','left_slider4','left_slider6',}
+threadFunction=function()
+    while sim.getSimulationState()~=sim.simulation_advancing_abouttostop do
+        -- Read the keyboard messages (make sure the focus is on the main window, scene view):
+        message,auxiliaryData=sim.getSimulatorMessage()
+        while message~=-1 do
+key=auxiliaryData[1]
+sim.addStatusbarMessage('key:'..key)
+            if (message==sim.message_keypress) then
+                if (auxiliaryData[1]==2007)or(auxiliaryData[1]==119) then
+                    -- up key
+                if  (auxiliaryData[1]==119)then
+                    joint_all_c1=sim.getObjectHandle(joint_r[1])
+                    joint_all_c2=sim.getObjectHandle(joint_r[2])  
+                    joint_all_c3=sim.getObjectHandle(joint_r[3])
+                    joint_all_c4=sim.getObjectHandle(joint_r[4])             
+                else
+                    joint_all_c1=sim.getObjectHandle(joint_b[1])
+                    joint_all_c2=sim.getObjectHandle(joint_b[2])
+                    joint_all_c3=sim.getObjectHandle(joint_b[3])
+                    joint_all_c4=sim.getObjectHandle(joint_b[4])    
+                end
+                    velocity=100
+                    torque=200
+                    hammer_back = 0
+end
+                if (auxiliaryData[1]==2008) or (auxiliaryData[1]==115) then
+                    -- down key
+                if  (auxiliaryData[1]==115)then
+                    joint_all_c1=sim.getObjectHandle(joint_r[1])
+                    joint_all_c2=sim.getObjectHandle(joint_r[2])  
+                    joint_all_c3=sim.getObjectHandle(joint_r[3])
+                    joint_all_c4=sim.getObjectHandle(joint_r[4])  
+                else
+                    joint_all_c1=sim.getObjectHandle(joint_b[1])
+                    joint_all_c2=sim.getObjectHandle(joint_b[2])
+                    joint_all_c3=sim.getObjectHandle(joint_b[3])
+                    joint_all_c4=sim.getObjectHandle(joint_b[4])
+                end
+                     hammer_back = 1
+                     torque=-200
+                     velocity = -100
+end
+                if (auxiliaryData[1]==2009) or (auxiliaryData[1]==100) then
+                    -- right key 
+                
+                if  (auxiliaryData[1]==100)then
+                if (sliding_r&gt;=0.3)then else sliding_r = sliding_r + 0.05 end  
+sim.addStatusbarMessage('sliding_r:'..sliding_r)
+                else
+                if (sliding_b&gt;=0.3)then else sliding_b = sliding_b + 0.05 end
+sim.addStatusbarMessage('sliding_b:'..sliding_b)
+                end
+
+                
+                end
+                if (auxiliaryData[1]==2010) or (auxiliaryData[1]==97) then
+                    -- left key
+                if  (auxiliaryData[1]==97)then
+                if (sliding_r&lt;=-0.3)then else sliding_r = sliding_r - 0.05 end
+                    
+sim.addStatusbarMessage('sliding_r:'..sliding_r)
+                else
+                if (sliding_b&lt;=-0.3)then else sliding_b = sliding_b - 0.05 end
+sim.addStatusbarMessage('sliding_b:'..sliding_b)
+                end
+                end
+            end
+            message,auxiliaryData=sim.getSimulatorMessage()
+        end
+ 
+        -- We take care of setting the desired hammer position:
+        if hammer_back == 1
+            then 
+        sim.setJointTargetPosition(joint_all_c1, velocity)
+        sim.setJointTargetPosition(joint_all_c2, velocity)
+        sim.setJointTargetPosition(joint_all_c3, velocity)
+        sim.setJointTargetPosition(joint_all_c4, velocity)
+               --sim.setObjectPosition(hammer, -1, position)
+        end
+        sim.setJointTargetPosition(joint_all_c1, velocity)
+        sim.setJointTargetPosition(joint_all_c2, velocity)
+        sim.setJointTargetPosition(joint_all_c3, velocity)
+        sim.setJointTargetPosition(joint_all_c4, velocity)
+
+        --sim.setJointForce(joint,torque)
+        sim.setJointTargetPosition(slider_r_c1, sliding_r)
+        sim.setJointTargetPosition(slider_r_c2, sliding_r)
+        sim.setJointTargetPosition(slider_r_c3, sliding_r)
+        sim.setJointTargetPosition(slider_r_c4, sliding_r)
+        sim.setJointTargetPosition(slider_b_c1, sliding_b)
+        sim.setJointTargetPosition(slider_b_c2, sliding_b)
+        sim.setJointTargetPosition(slider_b_c3, sliding_b)
+        sim.setJointTargetPosition(slider_b_c4, sliding_b)
+        --Since this script is threaded, don't waste time here:
+        sim.switchThread() -- Resume the script at next simulation loop start
+    end
+end
+-- Put some initialization code here:
+-- Retrieving of some handles and setting of some initial values:
+
+joint_all_c1=sim.getObjectHandle(joint_r[1])
+joint_all_c2=sim.getObjectHandle(joint_r[2])
+joint_all_c3=sim.getObjectHandle(joint_r[3])
+joint_all_c4=sim.getObjectHandle(joint_r[4])
+
+slider_r_c1=sim.getObjectHandle(slider_r[1])
+slider_r_c2=sim.getObjectHandle(slider_r[2])  
+slider_r_c3=sim.getObjectHandle(slider_r[3])
+slider_r_c4=sim.getObjectHandle(slider_r[4])
+
+slider_b_c1=sim.getObjectHandle(slider_b[1])
+slider_b_c2=sim.getObjectHandle(slider_b[2])  
+slider_b_c3=sim.getObjectHandle(slider_b[3])
+slider_b_c4=sim.getObjectHandle(slider_b[4]) 
+
+hammer=sim.getObjectHandle('player')
+velocity=0
+hammer_back=0
+torque=0
+sliding_r = 0
+sliding_b = 0
+orientation=sim.getJointPosition(joint_all_c1, -1)
+position=sim.getObjectPosition(hammer, -1)
+-- Here we execute the regular thread code:
+res,err=xpcall(threadFunction,function(err) return debug.traceback(err) end)
+if not res then
+    sim.addStatusbarMessage('Lua runtime error: '..err)
+end
+ 
+-- Put some clean-up code here:</pre>
+<p><a href="https://drive.google.com/open?id=1ZWjvxCqKGr-Szal7qcLMl7sAYaviV7aP">人對機</a></p>
+<p><iframe allowfullscreen="allowfullscreen" height="315" src="//www.youtube.com/embed/MxwbTm1Q78Q" width="516"></iframe></p>
+<p>人</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">-- model in Solvespace 500 mm = 5000 mm in V-rep
+--[[
+Simulation is 10 times of realistic environment
+floor in Solvespace 2.5 m x 2.5 m = 25 m x 25 m in V-rep
+ball is in Solivespace 1g (0.001) = 0.01 kg in V-rep
+hammer is in Solvespace 0.1 kg (100g) = 1kg in V-rep (0.1 for Inertia)
+]]
+local joint_r = {'left_joint1','left_joint3','left_joint5','left_joint7'}
+local joint_b = {'left_joint','left_joint2','left_joint4','left_joint6'}
+local slider_r ={'left_slider1','left_slider3','left_slider5','left_slider7'}
+local slider_b ={'left_slider','left_slider2','left_slider4','left_slider6'}
+local player_r ={'left_bearing1','left_bearing3','left_bearing5','left_bearing7'}
+
+
+threadFunction=function()
+    while sim.getSimulationState()~=sim.simulation_advancing_abouttostop do
+        -- Read the keyboard messages (make sure the focus is on the main window, scene view):
+        message,auxiliaryData=sim.getSimulatorMessage()
+        while message~=-1 do
+key=auxiliaryData[1]
+sim.addStatusbarMessage('key:'..key)
+
+            if (message==sim.message_keypress) then
+                if (auxiliaryData[1]==119) then
+                    -- up key
+                    joint_all_c1=sim.getObjectHandle(joint_b[1])
+                    joint_all_c2=sim.getObjectHandle(joint_b[2])
+                    joint_all_c3=sim.getObjectHandle(joint_b[3])
+                    joint_all_c4=sim.getObjectHandle(joint_b[4]) 
+                    velocity=100
+                    torque=200
+                    hammer_back = 0
+end
+                if  (auxiliaryData[1]==115) then
+                    -- down key
+                    joint_all_c1=sim.getObjectHandle(joint_b[1])
+                    joint_all_c2=sim.getObjectHandle(joint_b[2])
+                    joint_all_c3=sim.getObjectHandle(joint_b[3])
+                    joint_all_c4=sim.getObjectHandle(joint_b[4])
+                     hammer_back = 1
+                     torque=-200
+                     velocity =-100
+end
+                if  (auxiliaryData[1]==100) then
+                    -- right key 
+                if (sliding_b&gt;=0.3)then else sliding_b = sliding_b + 0.05 end
+                sim.addStatusbarMessage('sliding_b:'..sliding_b)
+                end
+                if  (auxiliaryData[1]==97) then
+                    -- left key
+                    if (sliding_b&lt;=-0.3)then else sliding_b = sliding_b - 0.05 end
+                    sim.addStatusbarMessage('sliding_b:'..sliding_b)
+                end
+            end
+            message,auxiliaryData=sim.getSimulatorMessage()
+        end
+ 
+        -- We take care of setting the desired hammer position:
+        if hammer_back == 1
+            then 
+        sim.setJointTargetPosition(joint_all_c1, velocity)
+        sim.setJointTargetPosition(joint_all_c2, velocity)
+        sim.setJointTargetPosition(joint_all_c3, velocity)
+        sim.setJointTargetPosition(joint_all_c4, velocity)
+               --sim.setObjectPosition(hammer, -1, position)
+        end
+        sim.setJointTargetPosition(joint_all_c1, velocity)
+        sim.setJointTargetPosition(joint_all_c2, velocity)
+        sim.setJointTargetPosition(joint_all_c3, velocity)
+        sim.setJointTargetPosition(joint_all_c4, velocity)
+
+        sim.setJointTargetPosition(slider_b_c1, sliding_b)
+        sim.setJointTargetPosition(slider_b_c2, sliding_b)
+        sim.setJointTargetPosition(slider_b_c3, sliding_b)
+        sim.setJointTargetPosition(slider_b_c4, sliding_b)
+        --Since this script is threaded, don't waste time here:
+        sim.switchThread() -- Resume the script at next simulation loop start
+    end
+
+end
+-- Put some initialization code here:
+-- Retrieving of some handles and setting of some initial values:
+
+
+
+joint_all_c1=sim.getObjectHandle(joint_b[1])
+joint_all_c2=sim.getObjectHandle(joint_b[2])
+joint_all_c3=sim.getObjectHandle(joint_b[3])
+joint_all_c4=sim.getObjectHandle(joint_b[4])
+
+slider_b_c1=sim.getObjectHandle(slider_b[1])
+slider_b_c2=sim.getObjectHandle(slider_b[2])  
+slider_b_c3=sim.getObjectHandle(slider_b[3])
+slider_b_c4=sim.getObjectHandle(slider_b[4]) 
+
+hammer=sim.getObjectHandle('player')
+velocity=0
+hammer_back=0
+torque=0
+--sliding_r = 0
+sliding_b = 0
+Bplayer1_slider=0
+orientation=sim.getJointPosition(joint_all_c1, -1)
+position=sim.getObjectPosition(hammer, -1)
+-- Here we execute the regular thread code:
+res,err=xpcall(threadFunction,function(err) return debug.traceback(err) end)
+if not res then
+    sim.addStatusbarMessage('Lua runtime error: '..err)
+end
+ 
+-- Put some clean-up code here:
+-- Put some clean-up code here:</pre>
+<p>機(其中一根*其他以此類推)</p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
+    KickBallV = 10
+    R_KickBallVel = (math.pi/180)*KickBallV
+    B_KickBallVel = -(math.pi/180)*KickBallV
+    Sphere_handle=sim.getObjectHandle('Sphere')
+    origin_position=sim.getObjectHandle('table')
+    player_M_handle=sim.getObjectHandle('player3')
+    player_L_handle=sim.getObjectHandle('player_3_l')
+    player_R_handle=sim.getObjectHandle('player_3_r')
+    joint_handle =sim.getObjectHandle('Revolute_joint3')
+    slider_handle=sim.getObjectHandle('Prismatic_joint3')
+    speed=  0.01
+    Xmin=  -0.01
+    Xmax=   0.02
+    YMmin=  -0.03
+    YMmax=  0.03
+
+end
+function sysCall_actuation()
+    position_origin=sim.getObjectPosition(origin_position,-1)
+    position_player_M=sim.getObjectPosition(player_M_handle,-1)
+    position_player_L=sim.getObjectPosition(player_L_handle,-1)
+    position_player_R=sim.getObjectPosition(player_R_handle,-1)
+    position_S=sim.getObjectPosition(Sphere_handle,-1)
+    X =position_S[1] - position_player_M[1]
+    Y =position_S[2] - position_origin[2]
+    slider=0
+        if     Y &gt; YMmax  then
+            LY=position_S[2]-position_player_L[2]
+            if LY &gt; 0 then slider = slider + speed
+            elseif LY &lt; 0 then slider = slider -speed
+            end
+
+        elseif Y &lt; YMmin  then 
+            RY=position_S[2]-position_player_R[2]
+            if RY &gt; 0 then slider = slider +speed
+            elseif RY &lt; 0 then slider = slider -speed
+            end
+        else
+            MY=position_S[2]-position_player_M[2]
+            if MY &gt; 0 then slider = slider +speed
+            elseif MY &lt; 0 then slider = slider -speed
+            end
+        end
+        if X &lt; Xmax and X &gt; Xmin  then
+            sim.setJointTargetVelocity(joint_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(joint_handle,1)
+        else
+            sim.setJointTargetVelocity(joint_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(joint_handle,-1)
+        end
+        sim.setJointTargetVelocity(slider_handle,slider)
+        sim.addStatusbarMessage('slider_handle:'..slider)
+end
+-- Put some clean-up code here:</pre>
+<p><a href="https://drive.google.com/open?id=1p2HKnmYjagW8lsLz0vRP7G1mGymBHOcH">機對機</a>(可用)</p>
+<p><a href="https://drive.google.com/open?id=1lqNeWBwgZLYs0apukIf2DM4jJEyoEw0I">機對機(物理回球裝置)</a></p>
+<p><iframe allowfullscreen="allowfullscreen" height="315" src="//www.youtube.com/embed/Uv_SfE0ZHog" width="516"></iframe></p>
+<pre class="brush:html;auto-links:false;toolbar:false" contenteditable="false">function sysCall_init() 
+    KickBallV = 10
+    R_KickBallVel = (math.pi/180)*KickBallV
+    B_KickBallVel = -(math.pi/180)*KickBallV
+    Sphere_handle=sim.getObjectHandle('Sphere')
+    origin_position=sim.getObjectHandle('table')
+    player_M_handle=sim.getObjectHandle('player3')
+    player_L_handle=sim.getObjectHandle('player_3_l')
+    player_R_handle=sim.getObjectHandle('player_3_r')
+    joint_handle =sim.getObjectHandle('Revolute_joint3')
+    slider_handle=sim.getObjectHandle('Prismatic_joint3')
+    speed=  0.01
+    Xmin=  -0.01
+    Xmax=   0.02
+    YMmin=  -0.03
+    YMmax=  0.03
+
+end
+function sysCall_actuation()
+    position_origin=sim.getObjectPosition(origin_position,-1)
+    position_player_M=sim.getObjectPosition(player_M_handle,-1)
+    position_player_L=sim.getObjectPosition(player_L_handle,-1)
+    position_player_R=sim.getObjectPosition(player_R_handle,-1)
+    position_S=sim.getObjectPosition(Sphere_handle,-1)
+    X =position_S[1] - position_player_M[1]
+    Y =position_S[2] - position_origin[2]
+    slider=0
+        if     Y &gt; YMmax  then
+            LY=position_S[2]-position_player_L[2]
+            if LY &gt; 0 then slider = slider + speed
+            elseif LY &lt; 0 then slider = slider -speed
+            end
+
+        elseif Y &lt; YMmin  then 
+            RY=position_S[2]-position_player_R[2]
+            if RY &gt; 0 then slider = slider +speed
+            elseif RY &lt; 0 then slider = slider -speed
+            end
+        else
+            MY=position_S[2]-position_player_M[2]
+            if MY &gt; 0 then slider = slider +speed
+            elseif MY &lt; 0 then slider = slider -speed
+            end
+        end
+        if X &lt; Xmax and X &gt; Xmin  then
+            sim.setJointTargetVelocity(joint_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(joint_handle,1)
+        else
+            sim.setJointTargetVelocity(joint_handle,B_KickBallVel)
+            sim.setJointTargetVelocity(joint_handle,-1)
+        end
+        sim.setJointTargetVelocity(slider_handle,slider)
+        sim.addStatusbarMessage('slider_handle:'..slider)
+end
+-- Put some clean-up code here:</pre>
+<p></p>
+<p></p>
+<br />送球機構設計與模擬 << <a href='送球機構設計與模擬.html'>Previous</a> <a href='結案報告.html'>Next</a> >> 結案報告</div></section></div></body></html>
